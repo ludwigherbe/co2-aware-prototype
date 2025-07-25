@@ -1,0 +1,15 @@
+{
+  "name": "co2-aware-backend",
+  "version": "1.0.0",
+  "description": "backend for CO2-aware prototype",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

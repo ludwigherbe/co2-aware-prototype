@@ -1,0 +1,21 @@
+# Lokale Konfigurationsdateien
+.env
+backend/.env
+frontend/.env
+
+# Node-Module und Build-Ordner
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+# Vite spezifische Dateien
+frontend/.vite/
+# Log-Dateien
+*.log
+# IDE spezifische Dateien
+.idea/
+.vscode/
+# Betriebssystem spezifische Dateien
+.DS_Store
+# nvm
+backend/.nvmrc
+frontend/.nvmrc

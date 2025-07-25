@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Aurora Smartphone Z9",
+    "price": 59.99,
+    "description": "Das Aurora Smartphone Z9 bietet eine beeindruckende Performance für den Alltag. Mit seinem hochauflösenden Display, einer schnellen Prozessorleistung und einem langlebigen Akku ist es der ideale Begleiter für Arbeit und Freizeit. Die Kamera liefert gestochen scharfe Bilder, während das schlanke Design in jeder Situation überzeugt. Dank moderner Konnektivität bleiben Sie stets verbunden und produktiv. Das Gerät ist robust verarbeitet und liegt angenehm in der Hand. Mit zahlreichen Apps und Funktionen unterstützt es Sie bei allen Aufgaben, ob Kommunikation, Entertainment oder Organisation. Das Aurora Smartphone Z9 ist die perfekte Wahl für alle, die Wert auf Qualität und Zuverlässigkeit legen.",
+    "category": "Electronics",
+    "image": "/images/products/1.jpg",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Helios Power Bank 20K",
+    "price": 79.99,
+    "description": "Die Helios Power Bank 20K ist ein leistungsstarker mobiler Akku für unterwegs. Mit einer Kapazität von 20.000 mAh lädt sie Smartphones, Tablets und andere Geräte zuverlässig auf. Das kompakte Design passt in jede Tasche und das robuste Gehäuse schützt vor Stößen. Mehrere USB-Anschlüsse ermöglichen das gleichzeitige Laden mehrerer Geräte. Die LED-Anzeige informiert über den aktuellen Ladestand. Dank Schnellladefunktion sind Ihre Geräte im Handumdrehen wieder einsatzbereit. Die Helios Power Bank 20K ist ideal für Reisen, Outdoor-Aktivitäten und den täglichen Gebrauch. Sie bietet Sicherheit und Komfort, wann immer Sie Energie benötigen.",
+    "category": "Electronics",
+    "image": "/images/products/2.jpg",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Atlas Laptop Stand Pro",
+    "price": 34.99,
+    "description": "Der Atlas Laptop Stand Pro sorgt für ergonomisches Arbeiten am Schreibtisch. Die stabile Konstruktion aus Aluminium bietet sicheren Halt für Laptops bis 17 Zoll. Die Höhe und Neigung sind individuell einstellbar, sodass Sie stets die optimale Position finden. Das offene Design fördert die Luftzirkulation und verhindert Überhitzung. Rutschfeste Füße schützen die Oberfläche und sorgen für festen Stand. Der Atlas Laptop Stand Pro ist leicht und kompakt, ideal für Büro und Homeoffice. Mit seinem modernen Look passt er zu jedem Arbeitsplatz und unterstützt eine gesunde Körperhaltung bei langen Arbeitsstunden.",
+    "category": "Accessories",
+    "image": "/images/products/3.jpg",
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "Nova Cotton T-Shirt XL",
+    "price": 24.99,
+    "description": "Das Nova Cotton T-Shirt XL überzeugt durch hohen Tragekomfort und modernes Design. Aus weicher Baumwolle gefertigt, bietet es ein angenehmes Hautgefühl und ist besonders atmungsaktiv. Die Passform ist klassisch und eignet sich für jeden Anlass, ob Freizeit oder Sport. Das T-Shirt ist pflegeleicht und bleibt auch nach vielen Wäschen formstabil. Mit seinem schlichten Look lässt es sich vielseitig kombinieren. Die hochwertige Verarbeitung garantiert Langlebigkeit und Strapazierfähigkeit. Das Nova Cotton T-Shirt XL ist die perfekte Wahl für alle, die Wert auf Komfort und Stil legen.",
+    "category": "Clothing",
+    "image": "/images/products/4.jpg",
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Vega Water Bottle 1L",
+    "price": 19.99,
+    "description": "Die Vega Water Bottle 1L ist der ideale Begleiter für Sport, Freizeit und Büro. Aus robustem Kunststoff gefertigt, ist sie bruchsicher und leicht zu reinigen. Der auslaufsichere Verschluss sorgt dafür, dass Ihre Getränke sicher transportiert werden. Die große Öffnung erleichtert das Befüllen und Reinigen. Mit einem Fassungsvermögen von einem Liter bleiben Sie stets ausreichend hydriert. Das schlanke Design passt in jede Tasche und jeden Getränkehalter. Die Vega Water Bottle 1L ist spülmaschinenfest und frei von schädlichen Stoffen. Sie eignet sich für Wasser, Säfte und andere Getränke.",
+    "category": "Lifestyle",
+    "image": "/images/products/5.jpg",
+    "inStock": false
+  },
+  {
+    "id": 6,
+    "name": "Orion Desk Lamp LED",
+    "price": 49.99,
+    "description": "Die Orion Desk Lamp LED bietet optimale Beleuchtung für Ihren Arbeitsplatz. Mit energiesparender LED-Technologie sorgt sie für helles, angenehmes Licht. Die flexible Schwanenhals-Konstruktion ermöglicht eine individuelle Ausrichtung des Lichtstrahls. Die Lampe verfügt über mehrere Helligkeitsstufen und eine Touch-Steuerung. Das moderne Design passt zu jedem Einrichtungsstil. Die Orion Desk Lamp LED ist langlebig und wartungsarm. Sie eignet sich für Büro, Homeoffice und Studium. Mit ihrem stabilen Standfuß bleibt sie sicher an Ort und Stelle. Die Lampe ist einfach zu bedienen und sorgt für produktives Arbeiten.",
+    "category": "Home",
+    "image": "/images/products/6.jpg",
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "name": "Lynx Wireless Charger",
+    "price": 39.99,
+    "description": "Der Lynx Wireless Charger ermöglicht kabelloses Laden für kompatible Geräte. Die schnelle Ladefunktion sorgt dafür, dass Ihr Smartphone in kurzer Zeit wieder einsatzbereit ist. Das elegante Gehäuse aus Holz und Metall fügt sich harmonisch in jede Umgebung ein. Die rutschfeste Oberfläche hält Ihr Gerät sicher an Ort und Stelle. Der Charger ist einfach zu bedienen und unterstützt verschiedene Ladeprotokolle. Mit seinem kompakten Design eignet er sich für Schreibtisch, Nachttisch oder Wohnzimmer. Der Lynx Wireless Charger ist die perfekte Lösung für komfortables und effizientes Laden.",
+    "category": "Electronics",
+    "image": "/images/products/7.jpg",
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Gemini Backpack 25L",
+    "price": 89.99,
+    "description": "Der Gemini Backpack 25L bietet viel Stauraum für Alltag und Reisen. Mit zahlreichen Fächern und Taschen lassen sich Laptop, Bücher und persönliche Gegenstände übersichtlich verstauen. Die gepolsterten Schultergurte sorgen für hohen Tragekomfort, auch bei längeren Strecken. Das wasserabweisende Material schützt den Inhalt vor Feuchtigkeit. Der Rucksack ist robust verarbeitet und hält auch größeren Belastungen stand. Das moderne Design passt zu jedem Stil. Der Gemini Backpack 25L ist die ideale Wahl für Schule, Arbeit und Freizeit. Er vereint Funktionalität und Komfort in einem Produkt.",
+    "category": "Accessories",
+    "image": "/images/products/8.jpg",
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "name": "Stellar Garden Light Set",
+    "price": 59.99,
+    "description": "Das Stellar Garden Light Set sorgt für stimmungsvolle Beleuchtung im Garten. Das Set besteht aus vier hochwertigen Leuchten, die einfach installiert werden können. Die Lampen sind wetterfest und langlebig, ideal für den Außenbereich. Mit ihrem warmen Licht schaffen sie eine angenehme Atmosphäre für Abende im Freien. Die Energieversorgung erfolgt über Batterien, sodass keine Kabel verlegt werden müssen. Das moderne Design passt zu jeder Gartengestaltung. Das Stellar Garden Light Set ist die perfekte Ergänzung für Terrassen, Wege und Beete. Es verbindet Funktionalität mit Ästhetik.",
+    "category": "Home",
+    "image": "/images/products/9.jpg",
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "name": "Pulse Phone Case Max",
+    "price": 14.99,
+    "description": "Das Pulse Phone Case Max schützt Ihr Smartphone zuverlässig vor Stößen und Kratzern. Das flexible Material passt sich perfekt an die Form des Geräts an und sorgt für sicheren Halt. Die präzisen Aussparungen ermöglichen den einfachen Zugang zu allen Anschlüssen und Tasten. Das schlichte Design ist zeitlos und passt zu jedem Stil. Die Hülle ist leicht und trägt kaum auf, sodass das Smartphone weiterhin komfortabel genutzt werden kann. Das Pulse Phone Case Max ist einfach zu reinigen und langlebig. Es bietet optimalen Schutz für Ihr Gerät im Alltag.",
+    "category": "Accessories",
+    "image": "/images/products/10.jpg",
+    "inStock": true
+  },
+  {
+    "id": 11,
+    "name": "Sonic Toothbrush Pro",
+    "price": 15.99,
+    "description": "Die Sonic Toothbrush Pro sorgt für gründliche Zahnpflege und ein strahlendes Lächeln. Mit ihren schnellen Schwingungen entfernt sie effektiv Plaque und Verunreinigungen. Der ergonomische Griff liegt gut in der Hand und erleichtert die Anwendung. Die Bürstenköpfe sind austauschbar und passen sich optimal an die Zahnform an. Die Sonic Toothbrush Pro ist wasserfest und eignet sich für den täglichen Gebrauch. Mit ihrem modernen Design und der langen Akkulaufzeit ist sie die ideale Wahl für alle, die Wert auf Mundhygiene legen. Sie unterstützt eine gesunde Zahnreinigung.",
+    "category": "Lifestyle",
+    "image": "/images/products/11.jpg",
+    "inStock": true
+  },
+  {
+    "id": 12,
+    "name": "Flex Shopping Bag XL",
+    "price": 17.99,
+    "description": "Die Flex Shopping Bag XL ist die perfekte Einkaufstasche für den täglichen Gebrauch. Aus strapazierfähigem Material gefertigt, bietet sie viel Platz für Lebensmittel und andere Einkäufe. Die verstärkten Griffe sorgen für angenehmen Tragekomfort, auch bei schwerer Beladung. Die Tasche ist leicht zusammenfaltbar und passt in jede Handtasche oder Rucksack. Das schlichte Design ist zeitlos und passt zu jedem Stil. Die Flex Shopping Bag XL ist waschbar und langlebig. Sie eignet sich für Supermarkt, Markt und Freizeit. Mit dieser Tasche sind Sie immer bestens ausgestattet.",
+    "category": "Accessories",
+    "image": "/images/products/12.jpg",
+    "inStock": true
+  },
+  {
+    "id": 13,
+    "name": "Royal Tea Set Deluxe",
+    "price": 29.99,
+    "description": "Das Royal Tea Set Deluxe bietet alles für einen stilvollen Teegenuss. Das Set enthält verschiedene Sorten hochwertigen Tees und elegante Tassen aus Porzellan. Die Teekanne ist robust und hält die Temperatur lange konstant. Die Tassen liegen angenehm in der Hand und sind spülmaschinenfest. Das Set eignet sich für gemütliche Stunden allein oder mit Gästen. Das klassische Design passt zu jeder Einrichtung. Das Royal Tea Set Deluxe ist ein ideales Geschenk für Teeliebhaber und sorgt für entspannte Momente. Es verbindet Qualität und Ästhetik in einem Produkt.",
+    "category": "Home",
+    "image": "/images/products/13.jpg",
+    "inStock": true
+  },
+  {
+    "id": 14,
+    "name": "Prime Coffee Beans 500",
+    "price": 12.99,
+    "description": "Die Prime Coffee Beans 500 bieten aromatischen Kaffeegenuss für jeden Tag. Die Bohnen werden sorgfältig ausgewählt und schonend geröstet, um das volle Aroma zu entfalten. Die Packung enthält 500 Gramm frische Kaffeebohnen, ideal für Filterkaffee, Espresso oder French Press. Der Geschmack ist ausgewogen und kräftig, mit feinen Nuancen. Die Prime Coffee Beans 500 eignen sich für alle Kaffeemaschinen und sind einfach zu dosieren. Das moderne Verpackungsdesign schützt das Aroma und sorgt für lange Frische. Genießen Sie Ihren Kaffee mit Prime Coffee Beans 500.",
+    "category": "Lifestyle",
+    "image": "/images/products/14.jpg",
+    "inStock": true
+  },
+  {
+    "id": 15,
+    "name": "NoteBook Classic A5",
+    "price": 19.99,
+    "description": "Das NoteBook Classic A5 ist der ideale Begleiter für Schule, Studium und Beruf. Mit 100 Seiten aus hochwertigem Papier bietet es viel Platz für Notizen, Skizzen und Ideen. Das stabile Cover schützt vor Beschädigungen und sorgt für eine lange Lebensdauer. Die kompakte Größe passt in jede Tasche und ist praktisch für unterwegs. Das schlichte Design ist zeitlos und passt zu jedem Stil. Das NoteBook Classic A5 eignet sich für alle, die gerne schreiben und organisieren. Es verbindet Funktionalität und Ästhetik in einem Produkt.",
+    "category": "Accessories",
+    "image": "/images/products/15.jpg",
+    "inStock": true
+  },
+  {
+    "id": 16,
+    "name": "Balance Yoga Mat Pro",
+    "price": 39.99,
+    "description": "Die Balance Yoga Mat Pro bietet optimalen Halt und Komfort für Yoga und Fitness. Aus rutschfestem Material gefertigt, sorgt sie für Sicherheit bei allen Übungen. Die Matte ist leicht und einfach zu transportieren. Die Oberfläche ist angenehm weich und unterstützt eine gesunde Körperhaltung. Die Balance Yoga Mat Pro ist pflegeleicht und langlebig. Sie eignet sich für Anfänger und Fortgeschrittene gleichermaßen. Das moderne Design passt zu jedem Stil. Mit dieser Matte wird jedes Training zum Vergnügen. Sie verbindet Funktionalität und Komfort.",
+    "category": "Lifestyle",
+    "image": "/images/products/16.jpg",
+    "inStock": true
+  },
+  {
+    "id": 17,
+    "name": "Echo Bluetooth Speaker",
+    "price": 54.99,
+    "description": "Der Echo Bluetooth Speaker liefert kraftvollen Sound für Musik und Podcasts. Mit moderner Bluetooth-Technologie verbindet er sich schnell mit Smartphones und Tablets. Der Akku hält bis zu 12 Stunden und sorgt für langanhaltenden Musikgenuss. Das kompakte Design passt in jede Tasche und ist ideal für unterwegs. Die Bedienung ist einfach und intuitiv. Der Echo Bluetooth Speaker ist robust und spritzwassergeschützt, perfekt für Outdoor-Aktivitäten. Mit seinem klaren Klang und der hohen Lautstärke ist er die ideale Wahl für alle Musikliebhaber.",
+    "category": "Electronics",
+    "image": "/images/products/17.jpg",
+    "inStock": true
+  },
+  {
+    "id": 18,
+    "name": "Pure Face Cream 50ml",
+    "price": 22.99,
+    "description": "Die Pure Face Cream 50ml pflegt die Haut intensiv und spendet langanhaltende Feuchtigkeit. Mit hochwertigen Inhaltsstoffen sorgt sie für ein angenehmes Hautgefühl und unterstützt die Regeneration. Die Creme ist leicht aufzutragen und zieht schnell ein. Sie eignet sich für alle Hauttypen und ist dermatologisch getestet. Das elegante Design der Verpackung macht sie zum Hingucker im Badezimmer. Die Pure Face Cream 50ml ist die ideale Wahl für die tägliche Gesichtspflege. Sie verbindet Wirksamkeit und Komfort in einem Produkt.",
+    "category": "Lifestyle",
+    "image": "/images/products/18.jpg",
+    "inStock": true
+  },
+  {
+    "id": 19,
+    "name": "Bamboo Cutlery Set XL",
+    "price": 14.99,
+    "description": "Das Bamboo Cutlery Set XL bietet alles für ein stilvolles Essen unterwegs. Das Set enthält Messer, Gabel, Löffel und Stäbchen aus robustem Bambus. Die Besteckteile sind leicht und einfach zu reinigen. Das praktische Etui schützt vor Verschmutzung und erleichtert den Transport. Das Bamboo Cutlery Set XL eignet sich für Picknick, Camping und Büro. Das schlichte Design passt zu jedem Stil. Mit diesem Set sind Sie immer bestens ausgestattet. Es verbindet Funktionalität und Nachhaltigkeit in einem Produkt.",
+    "category": "Home",
+    "image": "/images/products/19.jpg",
+    "inStock": true
+  },
+  {
+    "id": 20,
+    "name": "Cotton Socks Pack 3",
+    "price": 11.99,
+    "description": "Das Cotton Socks Pack 3 enthält drei Paar bequeme Socken aus hochwertiger Baumwolle. Die Socken sind atmungsaktiv und sorgen für ein angenehmes Tragegefühl. Die elastischen Bündchen bieten optimalen Halt, ohne einzuschnüren. Das schlichte Design passt zu jedem Outfit. Die Socken sind pflegeleicht und bleiben auch nach vielen Wäschen formstabil. Das Cotton Socks Pack 3 ist die ideale Wahl für Alltag, Sport und Freizeit. Es verbindet Komfort und Qualität in einem Produkt.",
+    "category": "Clothing",
+    "image": "/images/products/20.jpg",
+    "inStock": true
+  }
+]
