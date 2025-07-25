@@ -9,14 +9,10 @@ This project is a prototype for a CO2-aware web application, designed to demonst
 ```plaintext
 co2-aware-prototype/
 ├── backend/
-│   ├── .env
-│   ├── .nvmrc
 │   ├── package.json
 │   └── src/
 │       └── ...
 └── frontend/
-    ├── .env
-    ├── .nvmrc
     ├── package.json
     └── src/
         └── ...
