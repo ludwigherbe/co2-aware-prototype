@@ -19,3 +19,5 @@ frontend/.vite/
 # nvm
 backend/.nvmrc
 frontend/.nvmrc
+# postgres
+postgres-data/

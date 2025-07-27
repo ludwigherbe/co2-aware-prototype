@@ -1,0 +1,68 @@
+{
+  "userId": "1",
+  "forecast": [
+    {
+      "url": "/api/products",
+      "probability": 0.05,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": null
+    },
+    {
+      "url": "/api/products?page=1&limit=10",
+      "probability": 0.98,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": null
+    },
+    {
+      "url": "/api/products?page=2&limit=10",
+      "probability": 0.70,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:05:00Z"
+    },
+    {
+      "url": "/api/products?page=3&limit=10",
+      "probability": 0.4,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:10:00Z"
+    },
+    {
+      "url": "/api/products?page=4&limit=10",
+      "probability": 0.2,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:15:00Z"
+    },
+    {
+      "url": "/api/products?page=5&limit=10",
+      "probability": 0.05,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:20:00Z"
+    },
+    {
+      "url": "/api/products/p_001",
+      "probability": 0.80,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:00:00Z"
+    },
+    {
+      "url": "/api/products/p_004",
+      "probability": 0.75,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:00:00Z"
+    },
+    {
+      "url": "/api/products/p_012",
+      "probability": 0.25,
+      "isCacheable": true,
+      "ttlSeconds": 604800,
+      "predictedFirstCall": "2025-07-27T10:05:00Z"
+    }
+  ]
+}

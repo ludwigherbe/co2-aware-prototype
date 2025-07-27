@@ -1,0 +1,56 @@
+# docker-compose.yml
+# Diese Datei beschreibt, wie die Container für die lokale Entwicklung gestartet werden.
+# Version mit Healthcheck für die Datenbank.
+
+version: '3.8'
+
+services:
+  # 1. Der Datenbank-Service
+  db:
+    image: postgres:14-alpine
+    container_name: co2-aware-db
+    restart: always
+    environment:
+      POSTGRES_DB: co2_aware_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d co2_aware_db"]
+      interval: 10s   # Prüfe alle 10 Sekunden
+      timeout: 5s     # Warte maximal 5 Sekunden auf eine Antwort
+      retries: 5      # Versuche es 5 Mal, bevor der Status auf "unhealthy" gesetzt wird
+
+  # 2. Der Backend-Service
+  backend:
+    container_name: co2-aware-backend
+    build:
+      context: ./backend
+    restart: always
+    ports:
+      - "5000:5000"
+    # --- GEÄNDERT: depends_on ---
+    # Das Backend wartet nun, bis der Healthcheck des 'db'-Services
+    # den Status "healthy" meldet.
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_NAME: co2_aware_db
+      DB_PORT: 5432
+      APP_MODE: CLASSIC
+    networks:
+      - app-network
+
+# Definition des Netzwerks
+networks:
+  app-network:
+    driver: bridge
