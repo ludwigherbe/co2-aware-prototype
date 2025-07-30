@@ -1,8 +1,4 @@
 # docker-compose.yml
-# Diese Datei beschreibt, wie die Container für die lokale Entwicklung gestartet werden.
-# Version mit Healthcheck für die Datenbank.
-
-version: '3.8'
 
 services:
   # 1. Der Datenbank-Service
@@ -34,9 +30,6 @@ services:
     restart: always
     ports:
       - "5000:5000"
-    # --- GEÄNDERT: depends_on ---
-    # Das Backend wartet nun, bis der Healthcheck des 'db'-Services
-    # den Status "healthy" meldet.
     depends_on:
       db:
         condition: service_healthy
@@ -49,6 +42,25 @@ services:
       APP_MODE: CLASSIC
     networks:
       - app-network
+    command: sh -c "npm run db:seed && node server.js"
+
+  # 3. Der Frontend-Service
+  frontend:
+    container_name: co2-aware-frontend
+    build:
+      context: ./co2-aware-frontend
+      args:
+        # Übergibt APP_MODE an den Docker-Build
+        - VITE_APP_MODE=${APP_MODE}
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    command: sh -c "echo '\n\n🚀 Frontend ist bereit unter http://localhost:8080\n\n' && nginx -g 'daemon off;'"
+
+
 
 # Definition des Netzwerks
 networks:

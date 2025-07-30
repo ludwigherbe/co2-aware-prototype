@@ -28,7 +28,11 @@ co2-aware-prototype/
 ├── co2-aware-frontend/
 │   ├── public/
 │   ├── src/
-│   └── ...
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── layouts/
+│   │── ...
 ├── docker-compose.yml
 └── README.md
 ```

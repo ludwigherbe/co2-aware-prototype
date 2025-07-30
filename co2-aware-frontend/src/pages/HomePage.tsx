@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Typography, CircularProgress, Alert, Stack, Button, Box, TextField, InputAdornment } from '@mui/material';
+import { Typography, CircularProgress, Stack, Button, Box, TextField, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import type { Product } from '../types';
 import type { PaginatedProductsResponse } from '../services/apiServices';
@@ -39,8 +39,6 @@ function HomePage() {
 
   // Debouncing-Effekt für die Sucheingabe
   useEffect(() => {
-    // KORREKTUR: Führe den Effekt nur aus, wenn sich die Eingabe vom
-    // aktuellen Suchbegriff in der URL unterscheidet.
     if (searchInput !== currentSearch) {
       const delayDebounceFn = setTimeout(() => {
         setSearchParams({ search: searchInput, page: '1' });
@@ -96,10 +94,10 @@ function HomePage() {
           }}
         >
           <Typography variant="h2" component="h1" fontWeight="bold">
-            Willkommen im CO₂-Aware Shop
+            Willkommen im A ware Shop
           </Typography>
           <Typography variant="h5" component="p">
-            Nachhaltig und bewusst einkaufen.
+            Schnell und bequem online einkaufen.
           </Typography>
         </Box>
       </Box>

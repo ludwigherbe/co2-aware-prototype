@@ -1,54 +1,62 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
+import { VitePWA, type VitePWAOptions } from 'vite-plugin-pwa'
 
-export default defineConfig({
-  plugins: [
-    react(),
-    VitePWA({
-      // STRATEGIEWECHSEL: von generateSW zu injectManifest
-      strategies: 'injectManifest', 
-      
-      // PFAD ZU IHREM SERVICE WORKER
-      // Diese Datei werden wir in Schritt 2 erstellen.
-      srcDir: 'src',
-      filename: 'sw.ts',
-
-      // REGISTER-TYP ÄNDERN
-      // 'prompt' fragt den User, ob er die neue Version laden will.
-      // 'autoUpdate' ist für manuelle Kontrolle weniger geeignet.
-      registerType: 'prompt',
-
-      // MANIFEST-KONFIGURATION BLEIBT GLEICH
-      // Diese Informationen werden weiterhin für die PWA benötigt.
-      manifest: {
-        name: 'CO2 Aware Prototype',
-        short_name: 'CO2 App',
-        description: 'Ein Prototyp zur Visualisierung des CO2-Fußabdrucks von Produkten.',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
-        display: 'standalone',
-        scope: '/',
-        start_url: '/',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable'
-          }
-        ]
+/**
+ * Grundkonfiguration für das PWA-Plugin.
+ * Diese wird nur im "CO2_AWARE"-Modus verwendet.
+ */
+const pwaOptions: Partial<VitePWAOptions> = {
+  strategies: 'injectManifest',
+  srcDir: 'src',
+  filename: 'sw.ts',
+  injectManifest: {
+    injectionPoint: undefined
+  },
+  manifest: {
+    name: 'A ware Shop',
+    short_name: 'ware Shop',
+    description: 'Ein Prototyp zum zeitversetzten Caching im Client.',
+    theme_color: '#ffffff',
+    background_color: '#ffffff',
+    display: 'standalone',
+    scope: '/',
+    start_url: '/',
+    icons: [
+      {
+        src: 'pwa-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        src: 'pwa-512x512.png',
+        sizes: '512x512',
+        type: 'image/png'
+      },
+      {
+        src: 'pwa-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any maskable'
       }
-    })
-  ],
-})
+    ]
+  }
+};
+
+// Hauptkonfiguration für Vite
+export default defineConfig(() => { // 'mode' Parameter entfernt
+  const appMode = process.env.VITE_APP_MODE;
+  
+  console.log(`- Building frontend in mode: ${appMode} -`);
+
+  const plugins = [react()];
+
+  if (appMode === 'CO2_AWARE') {
+    console.log('  -> CO2_AWARE mode detected, enabling PWA plugin.');
+    plugins.push(VitePWA(pwaOptions));
+  }
+
+  return {
+    plugins: plugins
+  }
+});
