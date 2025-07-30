@@ -2,13 +2,14 @@
 
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 // Importiere die Routen
 const productRoutes = require('./routes/product.routes');
-const authRoutes = require('./routes/auth.routes');
 const predictingUserRoutes = require('./routes/predictingUser.routes');
 const cartRoutes = require('./routes/cart.routes');
+const imageRoutes = require('./routes/image.routes');
 
 
 const app = express();
@@ -33,12 +34,12 @@ app.get('/', (req, res) => {
 });
 
 // ======================================================
-// API-Routen registrieren
+// API-&Image-Routen registrieren
 // ======================================================
-app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/predicting-user', predictingUserRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/images', imageRoutes);
 
 
 // Server starten und auf dem definierten Port lauschen

@@ -5,11 +5,11 @@
     "price": 59.99,
     "description": "Das Aurora Smartphone Z9 bietet eine beeindruckende Performance für den Alltag. Mit seinem hochauflösenden Display, einer schnellen Prozessorleistung und einem langlebigen Akku ist es der ideale Begleiter für Arbeit und Freizeit. Die Kamera liefert gestochen scharfe Bilder, während das schlanke Design in jeder Situation überzeugt. Dank moderner Konnektivität bleiben Sie stets verbunden und produktiv. Das Gerät ist robust verarbeitet und liegt angenehm in der Hand. Mit zahlreichen Apps und Funktionen unterstützt es Sie bei allen Aufgaben, ob Kommunikation, Entertainment oder Organisation. Das Aurora Smartphone Z9 ist die perfekte Wahl für alle, die Wert auf Qualität und Zuverlässigkeit legen.",
     "category": "Electronics",
-    "thumbnail": "/images/template_thumbnail.jpg?product=1",
+    "thumbnail": "/images/template_thumbnail.png?product=1",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=1",
-      "/images/template_detail_2.jpg?product=1",
-      "/images/template_detail_3.jpg?product=1"
+      "/images/template_detail_1.png?product=1",
+      "/images/template_detail_2.png?product=1",
+      "/images/template_detail_3.png?product=1"
     ],
     "inStock": true
   },
@@ -19,11 +19,11 @@
     "price": 79.99,
     "description": "Die Helios Power Bank 20K ist ein leistungsstarker mobiler Akku für unterwegs. Mit einer Kapazität von 20.000 mAh lädt sie Smartphones, Tablets und andere Geräte zuverlässig auf. Das kompakte Design passt in jede Tasche und das robuste Gehäuse schützt vor Stößen. Mehrere USB-Anschlüsse ermöglichen das gleichzeitige Laden mehrerer Geräte. Die LED-Anzeige informiert über den aktuellen Ladestand. Dank Schnellladefunktion sind Ihre Geräte im Handumdrehen wieder einsatzbereit. Die Helios Power Bank 20K ist ideal für Reisen, Outdoor-Aktivitäten und den täglichen Gebrauch. Sie bietet Sicherheit und Komfort, wann immer Sie Energie benötigen.",
     "category": "Electronics",
-    "thumbnail": "/images/template_thumbnail.jpg?product=2",
+    "thumbnail": "/images/template_thumbnail.png?product=2",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=2",
-      "/images/template_detail_2.jpg?product=2",
-      "/images/template_detail_3.jpg?product=2"
+      "/images/template_detail_1.png?product=2",
+      "/images/template_detail_2.png?product=2",
+      "/images/template_detail_3.png?product=2"
     ],
     "inStock": true
   },
@@ -33,11 +33,11 @@
     "price": 34.99,
     "description": "Der Atlas Laptop Stand Pro sorgt für ergonomisches Arbeiten am Schreibtisch. Die stabile Konstruktion aus Aluminium bietet sicheren Halt für Laptops bis 17 Zoll. Die Höhe und Neigung sind individuell einstellbar, sodass Sie stets die optimale Position finden. Das offene Design fördert die Luftzirkulation und verhindert Überhitzung. Rutschfeste Füße schützen die Oberfläche und sorgen für festen Stand. Der Atlas Laptop Stand Pro ist leicht und kompakt, ideal für Büro und Homeoffice. Mit seinem modernen Look passt er zu jedem Arbeitsplatz und unterstützt eine gesunde Körperhaltung bei langen Arbeitsstunden.",
     "category": "Accessories",
-    "thumbnail": "/images/template_thumbnail.jpg?product=3",
+    "thumbnail": "/images/template_thumbnail.png?product=3",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=3",
-      "/images/template_detail_2.jpg?product=3",
-      "/images/template_detail_3.jpg?product=3"
+      "/images/template_detail_1.png?product=3",
+      "/images/template_detail_2.png?product=3",
+      "/images/template_detail_3.png?product=3"
     ],
     "inStock": true
   },
@@ -47,11 +47,11 @@
     "price": 24.99,
     "description": "Das Nova Cotton T-Shirt XL überzeugt durch hohen Tragekomfort und modernes Design. Aus weicher Baumwolle gefertigt, bietet es ein angenehmes Hautgefühl und ist besonders atmungsaktiv. Die Passform ist klassisch und eignet sich für jeden Anlass, ob Freizeit oder Sport. Das T-Shirt ist pflegeleicht und bleibt auch nach vielen Wäschen formstabil. Mit seinem schlichten Look lässt es sich vielseitig kombinieren. Die hochwertige Verarbeitung garantiert Langlebigkeit und Strapazierfähigkeit. Das Nova Cotton T-Shirt XL ist die perfekte Wahl für alle, die Wert auf Komfort und Stil legen.",
     "category": "Clothing",
-    "thumbnail": "/images/template_thumbnail.jpg?product=4",
+    "thumbnail": "/images/template_thumbnail.png?product=4",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=4",
-      "/images/template_detail_2.jpg?product=4",
-      "/images/template_detail_3.jpg?product=4"
+      "/images/template_detail_1.png?product=4",
+      "/images/template_detail_2.png?product=4",
+      "/images/template_detail_3.png?product=4"
     ],
     "inStock": true
   },
@@ -61,11 +61,11 @@
     "price": 19.99,
     "description": "Die Vega Water Bottle 1L ist der ideale Begleiter für Sport, Freizeit und Büro. Aus robustem Kunststoff gefertigt, ist sie bruchsicher und leicht zu reinigen. Der auslaufsichere Verschluss sorgt dafür, dass Ihre Getränke sicher transportiert werden. Die große Öffnung erleichtert das Befüllen und Reinigen. Mit einem Fassungsvermögen von einem Liter bleiben Sie stets ausreichend hydriert. Das schlanke Design passt in jede Tasche und jeden Getränkehalter. Die Vega Water Bottle 1L ist spülmaschinenfest und frei von schädlichen Stoffen. Sie eignet sich für Wasser, Säfte und andere Getränke.",
     "category": "Lifestyle",
-    "thumbnail": "/images/template_thumbnail.jpg?product=5",
+    "thumbnail": "/images/template_thumbnail.png?product=5",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=5",
-      "/images/template_detail_2.jpg?product=5",
-      "/images/template_detail_3.jpg?product=5"
+      "/images/template_detail_1.png?product=5",
+      "/images/template_detail_2.png?product=5",
+      "/images/template_detail_3.png?product=5"
     ],
     "inStock": false
   },
@@ -75,11 +75,11 @@
     "price": 49.99,
     "description": "Die Orion Desk Lamp LED bietet optimale Beleuchtung für Ihren Arbeitsplatz. Mit energiesparender LED-Technologie sorgt sie für helles, angenehmes Licht. Die flexible Schwanenhals-Konstruktion ermöglicht eine individuelle Ausrichtung des Lichtstrahls. Die Lampe verfügt über mehrere Helligkeitsstufen und eine Touch-Steuerung. Das moderne Design passt zu jedem Einrichtungsstil. Die Orion Desk Lamp LED ist langlebig und wartungsarm. Sie eignet sich für Büro, Homeoffice und Studium. Mit ihrem stabilen Standfuß bleibt sie sicher an Ort und Stelle. Die Lampe ist einfach zu bedienen und sorgt für produktives Arbeiten.",
     "category": "Home",
-    "thumbnail": "/images/template_thumbnail.jpg?product=6",
+    "thumbnail": "/images/template_thumbnail.png?product=6",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=6",
-      "/images/template_detail_2.jpg?product=6",
-      "/images/template_detail_3.jpg?product=6"
+      "/images/template_detail_1.png?product=6",
+      "/images/template_detail_2.png?product=6",
+      "/images/template_detail_3.png?product=6"
     ],
     "inStock": true
   },
@@ -89,11 +89,11 @@
     "price": 39.99,
     "description": "Der Lynx Wireless Charger ermöglicht kabelloses Laden für kompatible Geräte. Die schnelle Ladefunktion sorgt dafür, dass Ihr Smartphone in kurzer Zeit wieder einsatzbereit ist. Das elegante Gehäuse aus Holz und Metall fügt sich harmonisch in jede Umgebung ein. Die rutschfeste Oberfläche hält Ihr Gerät sicher an Ort und Stelle. Der Charger ist einfach zu bedienen und unterstützt verschiedene Ladeprotokolle. Mit seinem kompakten Design eignet er sich für Schreibtisch, Nachttisch oder Wohnzimmer. Der Lynx Wireless Charger ist die perfekte Lösung für komfortables und effizientes Laden.",
     "category": "Electronics",
-    "thumbnail": "/images/template_thumbnail.jpg?product=7",
+    "thumbnail": "/images/template_thumbnail.png?product=7",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=7",
-      "/images/template_detail_2.jpg?product=7",
-      "/images/template_detail_3.jpg?product=7"
+      "/images/template_detail_1.png?product=7",
+      "/images/template_detail_2.png?product=7",
+      "/images/template_detail_3.png?product=7"
     ],
     "inStock": true
   },
@@ -103,11 +103,11 @@
     "price": 89.99,
     "description": "Der Gemini Backpack 25L bietet viel Stauraum für Alltag und Reisen. Mit zahlreichen Fächern und Taschen lassen sich Laptop, Bücher und persönliche Gegenstände übersichtlich verstauen. Die gepolsterten Schultergurte sorgen für hohen Tragekomfort, auch bei längeren Strecken. Das wasserabweisende Material schützt den Inhalt vor Feuchtigkeit. Der Rucksack ist robust verarbeitet und hält auch größeren Belastungen stand. Das moderne Design passt zu jedem Stil. Der Gemini Backpack 25L ist die ideale Wahl für Schule, Arbeit und Freizeit. Er vereint Funktionalität und Komfort in einem Produkt.",
     "category": "Accessories",
-    "thumbnail": "/images/template_thumbnail.jpg?product=8",
+    "thumbnail": "/images/template_thumbnail.png?product=8",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=8",
-      "/images/template_detail_2.jpg?product=8",
-      "/images/template_detail_3.jpg?product=8"
+      "/images/template_detail_1.png?product=8",
+      "/images/template_detail_2.png?product=8",
+      "/images/template_detail_3.png?product=8"
     ],
     "inStock": true
   },
@@ -117,11 +117,11 @@
     "price": 59.99,
     "description": "Das Stellar Garden Light Set sorgt für stimmungsvolle Beleuchtung im Garten. Das Set besteht aus vier hochwertigen Leuchten, die einfach installiert werden können. Die Lampen sind wetterfest und langlebig, ideal für den Außenbereich. Mit ihrem warmen Licht schaffen sie eine angenehme Atmosphäre für Abende im Freien. Die Energieversorgung erfolgt über Batterien, sodass keine Kabel verlegt werden müssen. Das moderne Design passt zu jeder Gartengestaltung. Das Stellar Garden Light Set ist die perfekte Ergänzung für Terrassen, Wege und Beete. Es verbindet Funktionalität mit Ästhetik.",
     "category": "Home",
-    "thumbnail": "/images/template_thumbnail.jpg?product=9",
+    "thumbnail": "/images/template_thumbnail.png?product=9",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=9",
-      "/images/template_detail_2.jpg?product=9",
-      "/images/template_detail_3.jpg?product=9"
+      "/images/template_detail_1.png?product=9",
+      "/images/template_detail_2.png?product=9",
+      "/images/template_detail_3.png?product=9"
     ],
     "inStock": true
   },
@@ -131,11 +131,11 @@
     "price": 14.99,
     "description": "Das Pulse Phone Case Max schützt Ihr Smartphone zuverlässig vor Stößen und Kratzern. Das flexible Material passt sich perfekt an die Form des Geräts an und sorgt für sicheren Halt. Die präzisen Aussparungen ermöglichen den einfachen Zugang zu allen Anschlüssen und Tasten. Das schlichte Design ist zeitlos und passt zu jedem Stil. Die Hülle ist leicht und trägt kaum auf, sodass das Smartphone weiterhin komfortabel genutzt werden kann. Das Pulse Phone Case Max ist einfach zu reinigen und langlebig. Es bietet optimalen Schutz für Ihr Gerät im Alltag.",
     "category": "Accessories",
-    "thumbnail": "/images/template_thumbnail.jpg?product=10",
+    "thumbnail": "/images/template_thumbnail.png?product=10",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=10",
-      "/images/template_detail_2.jpg?product=10",
-      "/images/template_detail_3.jpg?product=10"
+      "/images/template_detail_1.png?product=10",
+      "/images/template_detail_2.png?product=10",
+      "/images/template_detail_3.png?product=10"
     ],
     "inStock": true
   },
@@ -145,11 +145,11 @@
     "price": 15.99,
     "description": "Die Sonic Toothbrush Pro sorgt für gründliche Zahnpflege und ein strahlendes Lächeln. Mit ihren schnellen Schwingungen entfernt sie effektiv Plaque und Verunreinigungen. Der ergonomische Griff liegt gut in der Hand und erleichtert die Anwendung. Die Bürstenköpfe sind austauschbar und passen sich optimal an die Zahnform an. Die Sonic Toothbrush Pro ist wasserfest und eignet sich für den täglichen Gebrauch. Mit ihrem modernen Design und der langen Akkulaufzeit ist sie die ideale Wahl für alle, die Wert auf Mundhygiene legen. Sie unterstützt eine gesunde Zahnreinigung.",
     "category": "Lifestyle",
-    "thumbnail": "/images/template_thumbnail.jpg?product=11",
+    "thumbnail": "/images/template_thumbnail.png?product=11",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=11",
-      "/images/template_detail_2.jpg?product=11",
-      "/images/template_detail_3.jpg?product=11"
+      "/images/template_detail_1.png?product=11",
+      "/images/template_detail_2.png?product=11",
+      "/images/template_detail_3.png?product=11"
     ],
     "inStock": true
   },
@@ -159,11 +159,11 @@
     "price": 17.99,
     "description": "Die Flex Shopping Bag XL ist die perfekte Einkaufstasche für den täglichen Gebrauch. Aus strapazierfähigem Material gefertigt, bietet sie viel Platz für Lebensmittel und andere Einkäufe. Die verstärkten Griffe sorgen für angenehmen Tragekomfort, auch bei schwerer Beladung. Die Tasche ist leicht zusammenfaltbar und passt in jede Handtasche oder Rucksack. Das schlichte Design ist zeitlos und passt zu jedem Stil. Die Flex Shopping Bag XL ist waschbar und langlebig. Sie eignet sich für Supermarkt, Markt und Freizeit. Mit dieser Tasche sind Sie immer bestens ausgestattet.",
     "category": "Accessories",
-    "thumbnail": "/images/template_thumbnail.jpg?product=12",
+    "thumbnail": "/images/template_thumbnail.png?product=12",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=12",
-      "/images/template_detail_2.jpg?product=12",
-      "/images/template_detail_3.jpg?product=12"
+      "/images/template_detail_1.png?product=12",
+      "/images/template_detail_2.png?product=12",
+      "/images/template_detail_3.png?product=12"
     ],
     "inStock": true
   },
@@ -173,11 +173,11 @@
     "price": 29.99,
     "description": "Das Royal Tea Set Deluxe bietet alles für einen stilvollen Teegenuss. Das Set enthält verschiedene Sorten hochwertigen Tees und elegante Tassen aus Porzellan. Die Teekanne ist robust und hält die Temperatur lange konstant. Die Tassen liegen angenehm in der Hand und sind spülmaschinenfest. Das Set eignet sich für gemütliche Stunden allein oder mit Gästen. Das klassische Design passt zu jeder Einrichtung. Das Royal Tea Set Deluxe ist ein ideales Geschenk für Teeliebhaber und sorgt für entspannte Momente. Es verbindet Qualität und Ästhetik in einem Produkt.",
     "category": "Home",
-    "thumbnail": "/images/template_thumbnail.jpg?product=13",
+    "thumbnail": "/images/template_thumbnail.png?product=13",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=13",
-      "/images/template_detail_2.jpg?product=13",
-      "/images/template_detail_3.jpg?product=13"
+      "/images/template_detail_1.png?product=13",
+      "/images/template_detail_2.png?product=13",
+      "/images/template_detail_3.png?product=13"
     ],
     "inStock": true
   },
@@ -187,11 +187,11 @@
     "price": 12.99,
     "description": "Die Prime Coffee Beans 500 bieten aromatischen Kaffeegenuss für jeden Tag. Die Bohnen werden sorgfältig ausgewählt und schonend geröstet, um das volle Aroma zu entfalten. Die Packung enthält 500 Gramm frische Kaffeebohnen, ideal für Filterkaffee, Espresso oder French Press. Der Geschmack ist ausgewogen und kräftig, mit feinen Nuancen. Die Prime Coffee Beans 500 eignen sich für alle Kaffeemaschinen und sind einfach zu dosieren. Das moderne Verpackungsdesign schützt das Aroma und sorgt für lange Frische. Genießen Sie Ihren Kaffee mit Prime Coffee Beans 500.",
     "category": "Lifestyle",
-    "thumbnail": "/images/template_thumbnail.jpg?product=14",
+    "thumbnail": "/images/template_thumbnail.png?product=14",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=14",
-      "/images/template_detail_2.jpg?product=14",
-      "/images/template_detail_3.jpg?product=14"
+      "/images/template_detail_1.png?product=14",
+      "/images/template_detail_2.png?product=14",
+      "/images/template_detail_3.png?product=14"
     ],
     "inStock": true
   },
@@ -201,11 +201,11 @@
     "price": 19.99,
     "description": "Das NoteBook Classic A5 ist der ideale Begleiter für Schule, Studium und Beruf. Mit 100 Seiten aus hochwertigem Papier bietet es viel Platz für Notizen, Skizzen und Ideen. Das stabile Cover schützt vor Beschädigungen und sorgt für eine lange Lebensdauer. Die kompakte Größe passt in jede Tasche und ist praktisch für unterwegs. Das schlichte Design ist zeitlos und passt zu jedem Stil. Das NoteBook Classic A5 eignet sich für alle, die gerne schreiben und organisieren. Es verbindet Funktionalität und Ästhetik in einem Produkt.",
     "category": "Accessories",
-    "thumbnail": "/images/template_thumbnail.jpg?product=15",
+    "thumbnail": "/images/template_thumbnail.png?product=15",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=15",
-      "/images/template_detail_2.jpg?product=15",
-      "/images/template_detail_3.jpg?product=15"
+      "/images/template_detail_1.png?product=15",
+      "/images/template_detail_2.png?product=15",
+      "/images/template_detail_3.png?product=15"
     ],
     "inStock": true
   },
@@ -215,11 +215,11 @@
     "price": 39.99,
     "description": "Die Balance Yoga Mat Pro bietet optimalen Halt und Komfort für Yoga und Fitness. Aus rutschfestem Material gefertigt, sorgt sie für Sicherheit bei allen Übungen. Die Matte ist leicht und einfach zu transportieren. Die Oberfläche ist angenehm weich und unterstützt eine gesunde Körperhaltung. Die Balance Yoga Mat Pro ist pflegeleicht und langlebig. Sie eignet sich für Anfänger und Fortgeschrittene gleichermaßen. Das moderne Design passt zu jedem Stil. Mit dieser Matte wird jedes Training zum Vergnügen. Sie verbindet Funktionalität und Komfort.",
     "category": "Lifestyle",
-    "thumbnail": "/images/template_thumbnail.jpg?product=16",
+    "thumbnail": "/images/template_thumbnail.png?product=16",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=16",
-      "/images/template_detail_2.jpg?product=16",
-      "/images/template_detail_3.jpg?product=16"
+      "/images/template_detail_1.png?product=16",
+      "/images/template_detail_2.png?product=16",
+      "/images/template_detail_3.png?product=16"
     ],
     "inStock": true
   },
@@ -229,11 +229,11 @@
     "price": 54.99,
     "description": "Der Echo Bluetooth Speaker liefert kraftvollen Sound für Musik und Podcasts. Mit moderner Bluetooth-Technologie verbindet er sich schnell mit Smartphones und Tablets. Der Akku hält bis zu 12 Stunden und sorgt für langanhaltenden Musikgenuss. Das kompakte Design passt in jede Tasche und ist ideal für unterwegs. Die Bedienung ist einfach und intuitiv. Der Echo Bluetooth Speaker ist robust und spritzwassergeschützt, perfekt für Outdoor-Aktivitäten. Mit seinem klaren Klang und der hohen Lautstärke ist er die ideale Wahl für alle Musikliebhaber.",
     "category": "Electronics",
-    "thumbnail": "/images/template_thumbnail.jpg?product=17",
+    "thumbnail": "/images/template_thumbnail.png?product=17",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=17",
-      "/images/template_detail_2.jpg?product=17",
-      "/images/template_detail_3.jpg?product=17"
+      "/images/template_detail_1.png?product=17",
+      "/images/template_detail_2.png?product=17",
+      "/images/template_detail_3.png?product=17"
     ],
     "inStock": true
   },
@@ -243,11 +243,11 @@
     "price": 22.99,
     "description": "Die Pure Face Cream 50ml pflegt die Haut intensiv und spendet langanhaltende Feuchtigkeit. Mit hochwertigen Inhaltsstoffen sorgt sie für ein angenehmes Hautgefühl und unterstützt die Regeneration. Die Creme ist leicht aufzutragen und zieht schnell ein. Sie eignet sich für alle Hauttypen und ist dermatologisch getestet. Das elegante Design der Verpackung macht sie zum Hingucker im Badezimmer. Die Pure Face Cream 50ml ist die ideale Wahl für die tägliche Gesichtspflege. Sie verbindet Wirksamkeit und Komfort in einem Produkt.",
     "category": "Lifestyle",
-    "thumbnail": "/images/template_thumbnail.jpg?product=18",
+    "thumbnail": "/images/template_thumbnail.png?product=18",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=18",
-      "/images/template_detail_2.jpg?product=18",
-      "/images/template_detail_3.jpg?product=18"
+      "/images/template_detail_1.png?product=18",
+      "/images/template_detail_2.png?product=18",
+      "/images/template_detail_3.png?product=18"
     ],
     "inStock": true
   },
@@ -257,11 +257,11 @@
     "price": 14.99,
     "description": "Das Bamboo Cutlery Set XL bietet alles für ein stilvolles Essen unterwegs. Das Set enthält Messer, Gabel, Löffel und Stäbchen aus robustem Bambus. Die Besteckteile sind leicht und einfach zu reinigen. Das praktische Etui schützt vor Verschmutzung und erleichtert den Transport. Das Bamboo Cutlery Set XL eignet sich für Picknick, Camping und Büro. Das schlichte Design passt zu jedem Stil. Mit diesem Set sind Sie immer bestens ausgestattet. Es verbindet Funktionalität und Nachhaltigkeit in einem Produkt.",
     "category": "Home",
-    "thumbnail": "/images/template_thumbnail.jpg?product=19",
+    "thumbnail": "/images/template_thumbnail.png?product=19",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=19",
-      "/images/template_detail_2.jpg?product=19",
-      "/images/template_detail_3.jpg?product=19"
+      "/images/template_detail_1.png?product=19",
+      "/images/template_detail_2.png?product=19",
+      "/images/template_detail_3.png?product=19"
     ],
     "inStock": true
   },
@@ -271,11 +271,431 @@
     "price": 11.99,
     "description": "Das Cotton Socks Pack 3 enthält drei Paar bequeme Socken aus hochwertiger Baumwolle. Die Socken sind atmungsaktiv und sorgen für ein angenehmes Tragegefühl. Die elastischen Bündchen bieten optimalen Halt, ohne einzuschnüren. Das schlichte Design passt zu jedem Outfit. Die Socken sind pflegeleicht und bleiben auch nach vielen Wäschen formstabil. Das Cotton Socks Pack 3 ist die ideale Wahl für Alltag, Sport und Freizeit. Es verbindet Komfort und Qualität in einem Produkt.",
     "category": "Clothing",
-    "thumbnail": "/images/template_thumbnail.jpg?product=20",
+    "thumbnail": "/images/template_thumbnail.png?product=20",
     "detailImages": [
-      "/images/template_detail_1.jpg?product=20",
-      "/images/template_detail_2.jpg?product=20",
-      "/images/template_detail_3.jpg?product=20"
+      "/images/template_detail_1.png?product=20",
+      "/images/template_detail_2.png?product=20",
+      "/images/template_detail_3.png?product=20"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 21,
+    "name": "Solaris Travel Mug 400ml",
+    "price": 15.49,
+    "description": "Der Solaris Travel Mug 400ml hält Ihre Getränke unterwegs lange warm oder kalt. Auslaufsicher, robust und mit praktischem Deckel – ideal für Pendler und Reisende.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=21",
+    "detailImages": [
+      "/images/template_detail_1.png?product=21",
+      "/images/template_detail_2.png?product=21",
+      "/images/template_detail_3.png?product=21"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 22,
+    "name": "Comet Gaming Mouse",
+    "price": 29.99,
+    "description": "Die Comet Gaming Mouse bietet präzise Steuerung und ergonomisches Design für lange Gaming-Sessions. Mit programmierbaren Tasten und RGB-Beleuchtung.",
+    "category": "Electronics",
+    "thumbnail": "/images/template_thumbnail.png?product=22",
+    "detailImages": [
+      "/images/template_detail_1.png?product=22",
+      "/images/template_detail_2.png?product=22",
+      "/images/template_detail_3.png?product=22"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 23,
+    "name": "Terra Lunch Box Duo",
+    "price": 18.99,
+    "description": "Die Terra Lunch Box Duo ist ideal für gesunde Mahlzeiten unterwegs. Zwei Fächer, auslaufsicher und spülmaschinenfest. Perfekt für Schule, Büro und Freizeit.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=23",
+    "detailImages": [
+      "/images/template_detail_1.png?product=23",
+      "/images/template_detail_2.png?product=23",
+      "/images/template_detail_3.png?product=23"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 24,
+    "name": "Urban Cap Classic",
+    "price": 12.49,
+    "description": "Die Urban Cap Classic ist ein stylisches Accessoire für jeden Tag. Aus Baumwolle, größenverstellbar und in modernem Design.",
+    "category": "Clothing",
+    "thumbnail": "/images/template_thumbnail.png?product=24",
+    "detailImages": [
+      "/images/template_detail_1.png?product=24",
+      "/images/template_detail_2.png?product=24",
+      "/images/template_detail_3.png?product=24"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 25,
+    "name": "Polar Thermo Flask 750ml",
+    "price": 22.99,
+    "description": "Die Polar Thermo Flask hält Getränke bis zu 12 Stunden heiß oder kalt. Aus Edelstahl, BPA-frei und mit praktischem Tragegriff.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=25",
+    "detailImages": [
+      "/images/template_detail_1.png?product=25",
+      "/images/template_detail_2.png?product=25",
+      "/images/template_detail_3.png?product=25"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 26,
+    "name": "Zen Garden Set Mini",
+    "price": 16.99,
+    "description": "Das Zen Garden Set Mini bringt Entspannung auf Ihren Schreibtisch. Enthält Sand, Steine und Rechen für kreative Pausen.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=26",
+    "detailImages": [
+      "/images/template_detail_1.png?product=26",
+      "/images/template_detail_2.png?product=26",
+      "/images/template_detail_3.png?product=26"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 27,
+    "name": "Galaxy Fitness Band",
+    "price": 44.99,
+    "description": "Das Galaxy Fitness Band misst Schritte, Puls und Schlaf. Mit App-Anbindung, langer Akkulaufzeit und wasserfestem Gehäuse.",
+    "category": "Electronics",
+    "thumbnail": "/images/template_thumbnail.png?product=27",
+    "detailImages": [
+      "/images/template_detail_1.png?product=27",
+      "/images/template_detail_2.png?product=27",
+      "/images/template_detail_3.png?product=27"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 28,
+    "name": "Eco Shopping Net",
+    "price": 7.99,
+    "description": "Das Eco Shopping Net ist die nachhaltige Alternative zur Plastiktüte. Aus Baumwolle, waschbar und besonders belastbar.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=28",
+    "detailImages": [
+      "/images/template_detail_1.png?product=28",
+      "/images/template_detail_2.png?product=28",
+      "/images/template_detail_3.png?product=28"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 29,
+    "name": "Nimbus Rain Jacket L",
+    "price": 59.99,
+    "description": "Die Nimbus Rain Jacket L schützt zuverlässig vor Wind und Regen. Atmungsaktiv, leicht und mit verstellbarer Kapuze.",
+    "category": "Clothing",
+    "thumbnail": "/images/template_thumbnail.png?product=29",
+    "detailImages": [
+      "/images/template_detail_1.png?product=29",
+      "/images/template_detail_2.png?product=29",
+      "/images/template_detail_3.png?product=29"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 30,
+    "name": "Lumen LED Flashlight",
+    "price": 13.99,
+    "description": "Die Lumen LED Flashlight ist kompakt, leistungsstark und wasserfest. Mit verschiedenen Leuchtmodi und langer Batterielaufzeit.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=30",
+    "detailImages": [
+      "/images/template_detail_1.png?product=30",
+      "/images/template_detail_2.png?product=30",
+      "/images/template_detail_3.png?product=30"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 31,
+    "name": "Magneto Notizhalter",
+    "price": 9.49,
+    "description": "Der Magneto Notizhalter hält wichtige Zettel und Fotos sicher am Kühlschrank oder Whiteboard. Im 4er-Set, stark haftend.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=31",
+    "detailImages": [
+      "/images/template_detail_1.png?product=31",
+      "/images/template_detail_2.png?product=31",
+      "/images/template_detail_3.png?product=31"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 32,
+    "name": "Pixel Art Puzzle 500",
+    "price": 17.99,
+    "description": "Das Pixel Art Puzzle 500 bietet kreativen Puzzlespaß für die ganze Familie. 500 Teile, farbenfrohes Motiv, hochwertig verarbeitet.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=32",
+    "detailImages": [
+      "/images/template_detail_1.png?product=32",
+      "/images/template_detail_2.png?product=32",
+      "/images/template_detail_3.png?product=32"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 33,
+    "name": "Arctic Ice Pack Set",
+    "price": 8.99,
+    "description": "Das Arctic Ice Pack Set hält Speisen und Getränke unterwegs kühl. Wiederverwendbar, auslaufsicher und schnell gefrierend.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=33",
+    "detailImages": [
+      "/images/template_detail_1.png?product=33",
+      "/images/template_detail_2.png?product=33",
+      "/images/template_detail_3.png?product=33"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 34,
+    "name": "Nova Sports Cap",
+    "price": 14.99,
+    "description": "Die Nova Sports Cap ist atmungsaktiv, leicht und schützt vor Sonne. Perfekt für Sport und Freizeit.",
+    "category": "Clothing",
+    "thumbnail": "/images/template_thumbnail.png?product=34",
+    "detailImages": [
+      "/images/template_detail_1.png?product=34",
+      "/images/template_detail_2.png?product=34",
+      "/images/template_detail_3.png?product=34"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 35,
+    "name": "Vivid Marker Set 12",
+    "price": 11.99,
+    "description": "Das Vivid Marker Set enthält 12 leuchtende Farben für Schule, Büro und Kreativprojekte. Wasserbasiert und geruchsarm.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=35",
+    "detailImages": [
+      "/images/template_detail_1.png?product=35",
+      "/images/template_detail_2.png?product=35",
+      "/images/template_detail_3.png?product=35"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 36,
+    "name": "Comfy Slippers XL",
+    "price": 19.99,
+    "description": "Die Comfy Slippers XL bieten höchsten Komfort zu Hause. Weiches Material, rutschfeste Sohle und modernes Design.",
+    "category": "Clothing",
+    "thumbnail": "/images/template_thumbnail.png?product=36",
+    "detailImages": [
+      "/images/template_detail_1.png?product=36",
+      "/images/template_detail_2.png?product=36",
+      "/images/template_detail_3.png?product=36"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 37,
+    "name": "Aero USB Fan",
+    "price": 10.99,
+    "description": "Der Aero USB Fan sorgt für angenehme Abkühlung am Arbeitsplatz. Kompakt, leise und mit flexiblem Hals.",
+    "category": "Electronics",
+    "thumbnail": "/images/template_thumbnail.png?product=37",
+    "detailImages": [
+      "/images/template_detail_1.png?product=37",
+      "/images/template_detail_2.png?product=37",
+      "/images/template_detail_3.png?product=37"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 38,
+    "name": "Smart Key Organizer",
+    "price": 13.49,
+    "description": "Der Smart Key Organizer hält bis zu 8 Schlüssel kompakt und übersichtlich zusammen. Aus Aluminium, leicht und robust.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=38",
+    "detailImages": [
+      "/images/template_detail_1.png?product=38",
+      "/images/template_detail_2.png?product=38",
+      "/images/template_detail_3.png?product=38"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 39,
+    "name": "Pure Bamboo Toothbrush",
+    "price": 4.99,
+    "description": "Die Pure Bamboo Toothbrush ist nachhaltig, vegan und sanft zu Zähnen und Zahnfleisch. Im 2er-Pack.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=39",
+    "detailImages": [
+      "/images/template_detail_1.png?product=39",
+      "/images/template_detail_2.png?product=39",
+      "/images/template_detail_3.png?product=39"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 40,
+    "name": "Flexi Phone Holder",
+    "price": 8.99,
+    "description": "Der Flexi Phone Holder ist flexibel einstellbar und hält Ihr Smartphone sicher am Schreibtisch oder im Auto.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=40",
+    "detailImages": [
+      "/images/template_detail_1.png?product=40",
+      "/images/template_detail_2.png?product=40",
+      "/images/template_detail_3.png?product=40"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 41,
+    "name": "Sonic Earbuds Lite",
+    "price": 24.99,
+    "description": "Die Sonic Earbuds Lite bieten kabellosen Musikgenuss mit klarem Sound. Mit Ladecase und Touch-Steuerung.",
+    "category": "Electronics",
+    "thumbnail": "/images/template_thumbnail.png?product=41",
+    "detailImages": [
+      "/images/template_detail_1.png?product=41",
+      "/images/template_detail_2.png?product=41",
+      "/images/template_detail_3.png?product=41"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 42,
+    "name": "Urban Wallet RFID",
+    "price": 21.99,
+    "description": "Das Urban Wallet RFID schützt Ihre Karten vor Datenklau. Kompakt, aus Leder und mit vielen Fächern.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=42",
+    "detailImages": [
+      "/images/template_detail_1.png?product=42",
+      "/images/template_detail_2.png?product=42",
+      "/images/template_detail_3.png?product=42"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 43,
+    "name": "Classic Desk Organizer",
+    "price": 14.99,
+    "description": "Der Classic Desk Organizer sorgt für Ordnung auf jedem Schreibtisch. Mit Fächern für Stifte, Notizen und mehr.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=43",
+    "detailImages": [
+      "/images/template_detail_1.png?product=43",
+      "/images/template_detail_2.png?product=43",
+      "/images/template_detail_3.png?product=43"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 44,
+    "name": "Active Sports Bottle 600ml",
+    "price": 13.99,
+    "description": "Die Active Sports Bottle 600ml ist leicht, robust und auslaufsicher. Mit praktischem Tragegriff und großer Öffnung.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=44",
+    "detailImages": [
+      "/images/template_detail_1.png?product=44",
+      "/images/template_detail_2.png?product=44",
+      "/images/template_detail_3.png?product=44"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 45,
+    "name": "Comfy Travel Pillow",
+    "price": 18.99,
+    "description": "Das Comfy Travel Pillow bietet optimalen Halt für Kopf und Nacken auf Reisen. Ergonomisch, weich und waschbar.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=45",
+    "detailImages": [
+      "/images/template_detail_1.png?product=45",
+      "/images/template_detail_2.png?product=45",
+      "/images/template_detail_3.png?product=45"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 46,
+    "name": "Smart Plug WiFi",
+    "price": 22.99,
+    "description": "Der Smart Plug WiFi macht Ihre Geräte smart steuerbar. Kompatibel mit Alexa und Google Home.",
+    "category": "Electronics",
+    "thumbnail": "/images/template_thumbnail.png?product=46",
+    "detailImages": [
+      "/images/template_detail_1.png?product=46",
+      "/images/template_detail_2.png?product=46",
+      "/images/template_detail_3.png?product=46"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 47,
+    "name": "Pure Cotton Bath Towel",
+    "price": 24.99,
+    "description": "Das Pure Cotton Bath Towel ist besonders weich, saugfähig und langlebig. Maße: 140x70 cm.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=47",
+    "detailImages": [
+      "/images/template_detail_1.png?product=47",
+      "/images/template_detail_2.png?product=47",
+      "/images/template_detail_3.png?product=47"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 48,
+    "name": "Urban Messenger Bag",
+    "price": 39.99,
+    "description": "Die Urban Messenger Bag ist stylisch, robust und bietet viel Platz für Laptop und Unterlagen.",
+    "category": "Accessories",
+    "thumbnail": "/images/template_thumbnail.png?product=48",
+    "detailImages": [
+      "/images/template_detail_1.png?product=48",
+      "/images/template_detail_2.png?product=48",
+      "/images/template_detail_3.png?product=48"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 49,
+    "name": "Balance Foam Roller",
+    "price": 21.99,
+    "description": "Der Balance Foam Roller unterstützt Regeneration und Muskelentspannung nach dem Training. Leicht und langlebig.",
+    "category": "Lifestyle",
+    "thumbnail": "/images/template_thumbnail.png?product=49",
+    "detailImages": [
+      "/images/template_detail_1.png?product=49",
+      "/images/template_detail_2.png?product=49",
+      "/images/template_detail_3.png?product=49"
+    ],
+    "inStock": true
+  },
+  {
+    "id": 50,
+    "name": "Classic Chef Knife",
+    "price": 27.99,
+    "description": "Das Classic Chef Knife ist scharf, ausgewogen und aus rostfreiem Edelstahl gefertigt. Für präzises Schneiden in der Küche.",
+    "category": "Home",
+    "thumbnail": "/images/template_thumbnail.png?product=50",
+    "detailImages": [
+      "/images/template_detail_1.png?product=50",
+      "/images/template_detail_2.png?product=50",
+      "/images/template_detail_3.png?product=50"
     ],
     "inStock": true
   }

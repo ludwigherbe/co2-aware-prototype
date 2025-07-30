@@ -1,0 +1,190 @@
+{
+  "userId": "1",
+  "forecast": [
+    {
+        "url": "/images/template_detail_1.png?homepage=true",
+        "probability": 0.85,
+        "isCacheable": true,
+        "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=1",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=4",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },{
+      "url": "/images/template_thumbnail_1.png?product=5",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=6",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=7",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=8",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=9",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=10",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_2.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_3.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_4.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_thumbnail_1.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_1.png?product=1",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_2.png?product=1",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_3.png?product=1",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_4.png?product=1",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_1.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_2.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_3.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_4.png?product=2",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_1.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_2.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_3.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_4.png?product=3",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_1.png?product=11",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_2.png?product=11",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_3.png?product=11",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    },
+    {
+      "url": "/images/template_detail_4.png?product=11",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 604800
+    }
+  ]
+}

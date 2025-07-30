@@ -1,62 +1,73 @@
-// backend/controllers/product.controller.js
-
 // Importiert den Datenbank-Verbindungspool
 const pool = require('../config/db');
 
+const PRODUCT_COLUMNS = `
+  id, name, price, description, category, thumbnail,
+  detail_images AS "detailImages", in_stock AS "inStock"
+`;
+
 /**
- * Holt eine paginierte Liste aller Produkte aus der PostgreSQL-Datenbank.
- * Akzeptiert 'page' und 'limit' als Query-Parameter.
- * Beispiel: /api/products?page=1&limit=10
+ * Holt eine paginierte und/oder gefilterte Liste aller Produkte.
+ * Akzeptiert 'page', 'limit' und 'search' als Query-Parameter.
  */
 const getAllProducts = async (req, res) => {
   try {
-    // 1. Lese die Query-Parameter für die Paginierung aus.
+    // 1. Lese Query-Parameter aus
     const page = parseInt(req.query.page, 10) || 1;
     const limit = parseInt(req.query.limit, 10) || 10;
-    const offset = (page - 1) * limit; // Berechne den Offset für die SQL-Abfrage
+    const offset = (page - 1) * limit;
+    const { search } = req.query; // Neuer Suchparameter
 
-    // 2. Führe zwei Abfragen parallel aus: eine für die Gesamtzahl und eine für die paginierten Daten
-    const totalProductsQuery = pool.query('SELECT COUNT(*) FROM products');
+    // 2. Baue die WHERE-Klausel und die Query-Parameter dynamisch auf
+    const whereClauses = [];
+    const queryParams = [];
+    let paramIndex = 1;
+
+    if (search) {
+      // Fügt eine Bedingung für die Namenssuche hinzu (case-insensitive)
+      whereClauses.push(`name ILIKE $${paramIndex++}`);
+      queryParams.push(`%${search}%`);
+    }
+
+    // HINWEIS: Um später nach Kategorie zu filtern, füge einfach hinzu:
+    // if (req.query.category) {
+    //   whereClauses.push(`category = $${paramIndex++}`);
+    //   queryParams.push(req.query.category);
+    // }
+
+    const whereString = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : '';
+
+    // 3. Führe die Abfragen aus (Gesamtzahl und paginierte Daten)
+    // Die WHERE-Klausel wird für beide Abfragen verwendet
+    const totalProductsQuery = pool.query(`SELECT COUNT(*) FROM products ${whereString}`, queryParams);
+    
+    // Füge Paginierungs-Parameter zur Parameter-Liste hinzu
+    const dataQueryParams = [...queryParams, limit, offset];
     const productsQuery = pool.query(
-      'SELECT * FROM products ORDER BY id ASC LIMIT $1 OFFSET $2',
-      [limit, offset]
+      `SELECT ${PRODUCT_COLUMNS} FROM products ${whereString} ORDER BY id ASC LIMIT $${paramIndex++} OFFSET $${paramIndex++}`,
+      dataQueryParams
     );
     
-    // Warte auf die Ergebnisse beider Abfragen
     const [totalResult, productsResult] = await Promise.all([totalProductsQuery, productsQuery]);
 
     const totalProducts = parseInt(totalResult.rows[0].count, 10);
     const products = productsResult.rows;
 
-    // 3. Erstelle das finale Antwort-Objekt
+    // 4. Erstelle das finale Antwort-Objekt (unverändert)
     const results = {};
-
-    // Füge Informationen für die nächste und vorherige Seite hinzu
     if (offset + limit < totalProducts) {
-      results.next = {
-        page: page + 1,
-        limit: limit,
-      };
+      results.next = { page: page + 1, limit: limit };
     }
-
     if (offset > 0) {
-      results.previous = {
-        page: page - 1,
-        limit: limit,
-      };
+      results.previous = { page: page - 1, limit: limit };
     }
-    
-    // Füge Metadaten zur Paginierung hinzu
     results.info = {
         totalProducts: totalProducts,
         totalPages: Math.ceil(totalProducts / limit),
         currentPage: page,
         limit: limit
     };
-
-    // Füge die Produkte für die aktuelle Seite hinzu
     results.results = products;
-
     res.status(200).json(results);
 
   } catch (error) {
@@ -72,10 +83,8 @@ const getProductById = async (req, res) => {
   try {
     const { id } = req.params;
     
-    // Führe eine SQL-Abfrage aus, um das Produkt mit der passenden ID zu finden
-    const result = await pool.query('SELECT * FROM products WHERE id = $1', [id]);
+    const result = await pool.query(`SELECT ${PRODUCT_COLUMNS} FROM products WHERE id = $1`, [id]);
     
-    // Überprüfe, ob ein Produkt gefunden wurde
     if (result.rows.length > 0) {
       const product = result.rows[0];
       res.status(200).json(product);
@@ -88,7 +97,36 @@ const getProductById = async (req, res) => {
   }
 };
 
+/**
+ * Holt bis zu 3 ähnliche Produkte aus derselben Kategorie.
+ */
+const getRelatedProducts = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const categoryResult = await pool.query('SELECT category FROM products WHERE id = $1', [id]);
+
+    if (categoryResult.rows.length === 0) {
+      return res.status(404).json({ message: `Produkt mit ID ${id} nicht gefunden.` });
+    }
+    const { category } = categoryResult.rows[0];
+
+    const relatedProductsResult = await pool.query(
+      `SELECT ${PRODUCT_COLUMNS} FROM products WHERE category = $1 AND id != $2 LIMIT 3`,
+      [category, id]
+    );
+
+    res.status(200).json(relatedProductsResult.rows);
+
+  } catch (error) {
+    console.error('Fehler beim Abrufen ähnlicher Produkte:', error);
+    res.status(500).json({ message: 'Serverfehler beim Abrufen ähnlicher Produkte.' });
+  }
+};
+
+
 module.exports = {
   getAllProducts,
   getProductById,
+  getRelatedProducts,
 };

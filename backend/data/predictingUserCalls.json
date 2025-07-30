@@ -2,13 +2,6 @@
   "userId": "1",
   "forecast": [
     {
-      "url": "/api/products",
-      "probability": 0.05,
-      "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": null
-    },
-    {
       "url": "/api/products?page=1&limit=10",
       "probability": 0.98,
       "isCacheable": true,
@@ -37,32 +30,40 @@
       "predictedFirstCall": "2025-07-27T10:15:00Z"
     },
     {
-      "url": "/api/products?page=5&limit=10",
-      "probability": 0.05,
+      "url": "/api/products/1",
+      "probability": 0.85,
       "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:20:00Z"
+      "ttlSeconds": 86400
     },
     {
-      "url": "/api/products/p_001",
+      "url": "/api/products/1/related",
+      "probability": 0.85,
+      "isCacheable": true,
+      "ttlSeconds": 86400
+    },
+    {
+      "url": "/api/products/2",
       "probability": 0.80,
       "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:00:00Z"
+      "ttlSeconds": 86400
     },
     {
-      "url": "/api/products/p_004",
+      "url": "/api/products/2/related",
+      "probability": 0.80,
+      "isCacheable": true,
+      "ttlSeconds": 86400
+    },
+    {
+      "url": "/api/products?search=Bank",
       "probability": 0.75,
       "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:00:00Z"
+      "ttlSeconds": 3600
     },
     {
-      "url": "/api/products/p_012",
-      "probability": 0.25,
+      "url": "/api/products?search=Bank",
+      "probability": 0.75,
       "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:05:00Z"
+      "ttlSeconds": 3600
     }
   ]
 }

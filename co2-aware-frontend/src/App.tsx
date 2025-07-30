@@ -1,38 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// co2-aware-frontend/src/App.tsx
 
-const mode = import.meta.env.VITE_APP_MODE || 'CLASSIC';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import HomePage from './pages/HomePage.tsx';
+import ProductDetailPage from './pages/ProductDetailPage.tsx';
+import LoginPage from './pages/LoginPage.tsx';
+import CartPage from './pages/CartPage.tsx';
+import MainLayout from './layouts/MainLayout.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log('Frontend-Modus:', mode);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Routen, die das Hauptlayout (mit Header etc.) verwenden */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/products/:id" element={<ProductDetailPage />} />
+          <Route path="/warenkorb" element={<CartPage />} />
+        </Route>
+
+        {/* Routen ohne das Hauptlayout, z.B. für einen fokussierten Login */}
+        <Route path="/login" element={<LoginPage />} />
+
+        {/* Fallback für unbekannte Routen */}
+        <Route path="*" element={<Navigate to="/home" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
