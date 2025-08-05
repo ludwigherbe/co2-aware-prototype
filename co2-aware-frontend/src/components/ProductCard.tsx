@@ -28,7 +28,7 @@ function ProductCard({ product }: ProductCardProps) {
         <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, p: 2 }}>
           <CardContent sx={{ flex: '1 0 auto' }}>
             <Typography component="div" variant="h5">
-              {product.name}
+              ID {product.id}: {product.name}
             </Typography>
             <Typography variant="h6" color="text.secondary" component="div" sx={{ mt: 1 }}>
               {new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(product.price)}

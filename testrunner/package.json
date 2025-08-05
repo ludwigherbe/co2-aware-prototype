@@ -1,0 +1,12 @@
+{
+  "name": "testrunner",
+  "version": "1.0.0",
+  "description": "Testrunner for master thesis prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0" 
+  }
+}

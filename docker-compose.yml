@@ -58,8 +58,18 @@ services:
       - backend
     networks:
       - app-network
-    command: sh -c "echo '\n\n🚀 Frontend ist bereit unter http://localhost:8080\n\n' && nginx -g 'daemon off;'"
-
+    command: sh -c "echo '🚀 Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
+  
+  testrunner:
+    build: ./testrunner
+    volumes:
+      - ./testrunner:/usr/src/app
+    networks:
+      - app-network
+    depends_on:
+      - frontend
+    environment:
+      - BASE_URL=http://frontend:80
 
 
 # Definition des Netzwerks
