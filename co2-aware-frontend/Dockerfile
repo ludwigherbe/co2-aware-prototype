@@ -3,8 +3,10 @@ FROM node:18-alpine AS build
 WORKDIR /usr/src/app
 
 # Mache das Build-Argument im Dockerfile bekannt
+ARG VITE_API_BASE_URL
 ARG VITE_APP_MODE
 # Setze es als Umgebungsvariable, damit npm/vite darauf zugreifen kann
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 ENV VITE_APP_MODE=$VITE_APP_MODE
 
 COPY package*.json ./

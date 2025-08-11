@@ -112,7 +112,7 @@ const getRelatedProducts = async (req, res) => {
     const { category } = categoryResult.rows[0];
 
     const relatedProductsResult = await pool.query(
-      `SELECT ${PRODUCT_COLUMNS} FROM products WHERE category = $1 AND id != $2 LIMIT 3`,
+      `SELECT ${PRODUCT_COLUMNS} FROM products WHERE category = $1 AND id != $2 ORDER BY id ASC LIMIT 3`,
       [category, id]
     );
 

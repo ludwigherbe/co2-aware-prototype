@@ -9,7 +9,7 @@ function Header() {
           A ware Shop
         </Typography>
         <Box>
-          <Button component={Link} to="/home" color="inherit">
+          <Button component={Link} to="/home" color="inherit" data-testid="home-button">
             Home
           </Button>
           <Button component={Link} to="/warenkorb" color="inherit" data-testid="cart-button">

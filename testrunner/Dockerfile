@@ -1,5 +1,5 @@
 # Base-Image mit Node.js
-FROM mcr.microsoft.com/playwright:v1.50.0-focal
+FROM mcr.microsoft.com/playwright:v1.54.0-noble
 
 # Arbeitsverzeichnis im Container setzen
 WORKDIR /usr/src/app

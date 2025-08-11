@@ -50,7 +50,7 @@ services:
     build:
       context: ./co2-aware-frontend
       args:
-        # Übergibt APP_MODE an den Docker-Build
+        - VITE_API_BASE_URL=http://backend:5000
         - VITE_APP_MODE=${APP_MODE}
     ports:
       - "8080:80"
@@ -61,12 +61,15 @@ services:
     command: sh -c "echo '🚀 Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
   
   testrunner:
+    container_name: co2-aware-testrunner
     build: ./testrunner
     volumes:
       - ./testrunner:/usr/src/app
     networks:
       - app-network
     depends_on:
+      - db
+      - backend
       - frontend
     environment:
       - BASE_URL=http://frontend:80

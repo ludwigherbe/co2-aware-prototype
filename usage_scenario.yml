@@ -1,0 +1,37 @@
+# usage_scenario.yml
+name: co2-aware-prototype
+compose-file: !include docker-compose.yml
+
+services:
+  db:
+    ports: []
+    volumes: []
+  backend:
+    ports: []
+    environment:
+      APP_MODE: "CLASSIC"         # CLASSIC oder CO2_AWARE
+    log-stdout: true
+
+  frontend:
+    ports: []
+    build:
+      args:
+        VITE_APP_MODE: "CLASSIC"
+    log-stdout: true
+
+  testrunner:
+    entrypoint: ""
+    command: "sh -c 'sleep infinity'"
+    log-stdout: true
+    read-notes-stdout: true
+
+
+flow:
+  - name: Playwright run
+    container: testrunner
+    commands:
+      - type: console
+        command: "npx playwright test"
+        read-notes-stdout: true
+      - type: console
+        command: "sleep 20"

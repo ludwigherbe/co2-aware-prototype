@@ -5,10 +5,11 @@ import type { Product } from '../types';
 import type { PaginatedProductsResponse } from '../services/apiServices';
 import ProductCard from '../components/ProductCard';
 import { fetchProducts } from '../services/apiServices';
-import { API_BASE_URL } from '../config';
 import { useSearchParams } from 'react-router-dom';
 
 function HomePage() {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  
   const [searchParams, setSearchParams] = useSearchParams();
 
   const currentPage = parseInt(searchParams.get('page') || '1', 10);

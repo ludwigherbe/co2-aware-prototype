@@ -1,11 +1,12 @@
 import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import type { Product } from '../types';
-import { API_BASE_URL } from '../config';
 
 interface ProductCardProps {
   product: Product;
 }
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
 
 function ProductCard({ product }: ProductCardProps) {
   const imageUrl = `${API_BASE_URL}${product.thumbnail}`;

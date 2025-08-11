@@ -1,6 +1,4 @@
 // co2-aware-frontend/src/services/apiServices.ts
-
-import { API_BASE_URL } from '../config';
 import type { Cart, Product } from '../types';
 
 // Wir definieren die gesamte API-Antwort als Typ für Typsicherheit
@@ -14,6 +12,8 @@ export interface PaginatedProductsResponse {
   next?: { page: number; limit: number };
   previous?: { page: number; limit: number };
 }
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
 
 /**
  * Ruft eine paginierte und/oder gefilterte Produktliste vom Backend ab.

@@ -10,7 +10,7 @@ import {
   Stack,
   Divider,
   Button,
-  Snackbar // NEU
+  Snackbar
 } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import type { Product } from '../types';
@@ -19,10 +19,13 @@ import {
   fetchRelatedProducts,
   addItemToCart
 } from '../services/apiServices';
-import { API_BASE_URL } from '../config';
 import ProductCard from '../components/ProductCard';
 
+
 function ProductDetailPage() {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+
+
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);

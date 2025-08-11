@@ -1,69 +1,30 @@
 {
   "userId": "1",
   "forecast": [
-    {
-      "url": "/api/products?page=1&limit=10",
-      "probability": 0.98,
-      "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": null
-    },
-    {
-      "url": "/api/products?page=2&limit=10",
-      "probability": 0.70,
-      "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:05:00Z"
-    },
-    {
-      "url": "/api/products?page=3&limit=10",
-      "probability": 0.4,
-      "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:10:00Z"
-    },
-    {
-      "url": "/api/products?page=4&limit=10",
-      "probability": 0.2,
-      "isCacheable": true,
-      "ttlSeconds": 604800,
-      "predictedFirstCall": "2025-07-27T10:15:00Z"
-    },
-    {
-      "url": "/api/products/1",
-      "probability": 0.85,
-      "isCacheable": true,
-      "ttlSeconds": 86400
-    },
-    {
-      "url": "/api/products/1/related",
-      "probability": 0.85,
-      "isCacheable": true,
-      "ttlSeconds": 86400
-    },
-    {
-      "url": "/api/products/2",
-      "probability": 0.80,
-      "isCacheable": true,
-      "ttlSeconds": 86400
-    },
-    {
-      "url": "/api/products/2/related",
-      "probability": 0.80,
-      "isCacheable": true,
-      "ttlSeconds": 86400
-    },
-    {
-      "url": "/api/products?search=Bank",
-      "probability": 0.75,
-      "isCacheable": true,
-      "ttlSeconds": 3600
-    },
-    {
-      "url": "/api/products?search=Bank",
-      "probability": 0.75,
-      "isCacheable": true,
-      "ttlSeconds": 3600
-    }
+    { "url": "/api/products?page=1&limit=10", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products?page=2&limit=10", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products?page=3&limit=10", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products?page=4&limit=10", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/1", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/1/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/2", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/2/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/11", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/11/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/12", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/12/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/21", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/21/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/22", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/22/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/31", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/31/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/32", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/32/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/41", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/41/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/42", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/products/42/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
+    { "url": "/api/cart", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null }
   ]
 }

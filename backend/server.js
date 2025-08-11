@@ -27,6 +27,24 @@ if (mode !== 'CLASSIC' && mode !== 'CO2_AWARE') {
 }
 console.log(`Server startet im Modus: ${mode}`);
 
+// Zeitstempel in Mikrosekunden
+function nowUs() {
+  return BigInt(Date.now()) * 1000n;
+}
+
+// Einheitliche Logging-Middleware für bestimmte Prefixe
+function attachRouteLogger(prefix) {
+  app.use(prefix, (req, res, next) => {
+    res.on('finish', () => {
+      const tsUs = nowUs();
+      process.stdout.write(`${tsUs} BACKEND ${req.method} ${req.originalUrl}\n`);
+    });
+    next();
+  });
+}
+
+attachRouteLogger('/api');
+attachRouteLogger('/images');
 
 // Eine einfache Test-Route, um zu sehen, ob der Server läuft
 app.get('/', (req, res) => {
