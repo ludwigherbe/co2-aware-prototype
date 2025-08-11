@@ -9,7 +9,8 @@ This project is a prototype for a CO2-aware web application, designed to demonst
 
 - **Backend:** Node.js, Express.js  
 - **Frontend:** React (Vite)  
-- **Datenbank:** PostgreSQL  
+- **Datenbank:** PostgreSQL
+- **Tests:** Playwright
 - **Containerisierung:** Docker, Docker Compose
 
 ## Verzeichnisstruktur
@@ -33,7 +34,10 @@ co2-aware-prototype/
 │   │   ├── services/
 │   │   ├── layouts/
 │   │── ...
+├── testrunner/
+│   ├── tests/ (Playwright)
 ├── docker-compose.yml
+├── usage_scenario_classic.yml
 └── README.md
 ```
 
@@ -66,8 +70,18 @@ Die Anwendung wird über Docker Compose verwaltet. Stelle sicher, dass Docker un
     npm install
     npm run dev
     ```
+5. **Test ausführen:**
+    Um das Testszenario mit Playwright auszuführen, wechsle in das `testrunner`-Verzeichnis und führe die Tests aus:
+    ```npx playwright test --ui
+    ```
 
 Die Anwendung ist nun betriebsbereit. Das Frontend ist typischerweise unter `http://localhost:5173` und das Backend unter `http://localhost:5000` erreichbar.
+
+## Messung - Green Metrics Tool
+- vor dem Einreichen des Repos sicherstellen:
+Modus, wie gewünscht in dem usage_scenario.yml korrekt gesetzt (backend und frrontend)
+- CLASSIC oder CO2_AWARE
+- in der Testdatei scenario.spec.ts die gewünschte Zeit zwischen den Zyklen eingestellt
 
 ## Lizenz
 
