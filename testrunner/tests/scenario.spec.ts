@@ -3,7 +3,7 @@ import { startNotesClock, note } from './../notes';
 
 // const BASE_URL = "http://localhost:8080";
 const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
-const timeoutPhase = 10000; // 10 Sekunden für passive Phasen
+const timeoutPhase = 30000; // 30 Sekunden für passive Phasen
 
 // --- Test-Schritt Definitionen ---
 
@@ -95,7 +95,7 @@ test('Finales 7-Zyklen Testszenario', async ({ page }) => {
   startNotesClock();
   note('RUN_START');
 
-  test.setTimeout(420000);
+  test.setTimeout(420000); // 7 Minuten für das gesamte Szenario
 
   // --- ZYKLUS 1 ---
   await runCycle1(page);

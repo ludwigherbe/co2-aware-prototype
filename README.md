@@ -78,9 +78,10 @@ Die Anwendung wird über Docker Compose verwaltet. Stelle sicher, dass Docker un
 Die Anwendung ist nun betriebsbereit. Das Frontend ist typischerweise unter `http://localhost:5173` und das Backend unter `http://localhost:5000` erreichbar.
 
 ## Messung - Green Metrics Tool
-- vor dem Einreichen des Repos sicherstellen:
-Modus, wie gewünscht in dem usage_scenario.yml korrekt gesetzt (backend und frrontend)
-- CLASSIC oder CO2_AWARE
+- Modus: CLASSIC oder CO2_AWARE an folgenden Stellen korrekt setzen:
+docker-compose.yml - backend - enviroment - APP_MODE
+frontend/Dockerfile - ENV VITE_APP_MODE
+
 - in der Testdatei scenario.spec.ts die gewünschte Zeit zwischen den Zyklen eingestellt
 
 ## Lizenz

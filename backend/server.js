@@ -62,5 +62,5 @@ app.use('/images', imageRoutes);
 
 // Server starten und auf dem definierten Port lauschen
 app.listen(PORT, () => {
-  console.log(`Einfacher Express-Server läuft auf http://localhost:${PORT}`);
+  console.log(`Express-Server läuft auf http://localhost:${PORT}`);
 });

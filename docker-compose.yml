@@ -15,7 +15,9 @@ services:
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
     networks:
-      - app-network
+      app-network:
+        aliases:
+          - co2-aware-db
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U user -d co2_aware_db"]
       interval: 10s   # Prüfe alle 10 Sekunden
@@ -34,7 +36,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DB_HOST: db
+      DB_HOST: co2-aware-db
       DB_USER: user
       DB_PASSWORD: password
       DB_NAME: co2_aware_db
@@ -42,16 +44,17 @@ services:
       APP_MODE: CLASSIC
     networks:
       - app-network
-    command: sh -c "npm run db:seed && node server.js"
+    command: >
+      sh -c "
+        npx --yes wait-on tcp:$DB_HOST:$DB_PORT &&
+        npm run db:seed && node server.js
+      "
 
   # 3. Der Frontend-Service
   frontend:
     container_name: co2-aware-frontend
     build:
       context: ./co2-aware-frontend
-      args:
-        - VITE_API_BASE_URL=http://backend:5000
-        - VITE_APP_MODE=${APP_MODE}
     ports:
       - "8080:80"
     depends_on:
@@ -72,7 +75,7 @@ services:
       - backend
       - frontend
     environment:
-      - BASE_URL=http://frontend:80
+      - BASE_URL=http://co2-aware-frontend:80
 
 
 # Definition des Netzwerks

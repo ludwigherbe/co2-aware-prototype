@@ -1,16 +1,16 @@
 # Stufe 1: Bauen der React-Anwendung
-FROM node:18-alpine AS build
+FROM node:20-alpine AS build
 WORKDIR /usr/src/app
 
 # Mache das Build-Argument im Dockerfile bekannt
 ARG VITE_API_BASE_URL
 ARG VITE_APP_MODE
 # Setze es als Umgebungsvariable, damit npm/vite darauf zugreifen kann
-ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
-ENV VITE_APP_MODE=$VITE_APP_MODE
+ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
+ENV VITE_APP_MODE=CLASSIC
 
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # Restlichen Quellcode kopieren
 COPY . .

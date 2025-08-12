@@ -10,7 +10,7 @@ const { Pool } = require('pg');
 // keine Umgebungsvariablen für die DB-Verbindung gesetzt werden können.
 // Für die lokale Entwicklung ist die Verwendung von process.env flexibler.
 const pool = new Pool({
-  host: 'db',             // Der Service-Name des DB-Containers in Docker
+  host: 'co2-aware-db',   // Der Service-Name des DB-Containers in Docker
   user: 'user',           // Der in docker-compose.yml definierte Benutzer
   password: 'password',   // Das in docker-compose.yml definierte Passwort
   database: 'co2_aware_db',// Die in docker-compose.yml definierte Datenbank

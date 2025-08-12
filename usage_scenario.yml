@@ -1,5 +1,7 @@
 # usage_scenario.yml
 name: co2-aware-prototype
+author: Ludwig Herbe
+description: Measurement scenario for CO2-Aware prototype (Playwright flow, backend+frontend+db+testrunner)
 compose-file: !include docker-compose.yml
 
 services:
@@ -9,16 +11,15 @@ services:
   backend:
     ports: []
     environment:
-      APP_MODE: "CLASSIC"         # CLASSIC oder CO2_AWARE
+      DB_HOST: co2-aware-db
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_NAME: co2_aware_db
+      DB_PORT: 5432
     log-stdout: true
-
   frontend:
     ports: []
-    build:
-      args:
-        VITE_APP_MODE: "CLASSIC"
     log-stdout: true
-
   testrunner:
     entrypoint: ""
     command: "sh -c 'sleep infinity'"
@@ -28,7 +29,7 @@ services:
 
 flow:
   - name: Playwright run
-    container: testrunner
+    container: co2-aware-testrunner
     commands:
       - type: console
         command: "npx playwright test"
