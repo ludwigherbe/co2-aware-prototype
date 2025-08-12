@@ -8,10 +8,10 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Abhängigkeiten installieren
-RUN npm install
+RUN npm ci --include=dev
 
 # Restlichen Quellcode kopieren
 COPY . .
 
 # Standardbefehl, der beim Start des Containers ausgeführt wird
-CMD ["npx", "playwright", "test"]
+# CMD ["npx", "playwright", "test"]

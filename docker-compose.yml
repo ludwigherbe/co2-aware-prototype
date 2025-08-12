@@ -46,7 +46,7 @@ services:
       - app-network
     command: >
       sh -c "
-        npx --yes wait-on tcp:$DB_HOST:$DB_PORT &&
+        npx --yes wait-on tcp:${DB_HOST:-co2-aware-db}:${DB_PORT:-5432} &&
         npm run db:seed && node server.js
       "
 

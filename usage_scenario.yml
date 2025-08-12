@@ -22,6 +22,7 @@ services:
     log-stdout: true
   testrunner:
     entrypoint: ""
+    volumes: []
     command: "sh -c 'sleep infinity'"
     log-stdout: true
     read-notes-stdout: true
