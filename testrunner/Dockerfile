@@ -14,4 +14,4 @@ RUN npm ci --include=dev
 COPY . .
 
 # Standardbefehl, der beim Start des Containers ausgeführt wird
-# CMD ["npx", "playwright", "test"]
+CMD ["npx", "playwright", "test"]

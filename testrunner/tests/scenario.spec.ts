@@ -1,14 +1,26 @@
 import { test, expect, Page } from '@playwright/test';
 import { startNotesClock, note } from './../notes';
 
-// const BASE_URL = "http://localhost:8080";
 const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
+const APP_MODE = process.env.APP_MODE || 'CLASSIC';
+
 const timeoutPhase = 30000; // 30 Sekunden für passive Phasen
+
+async function swCall<T>(page: Page, payload: any): Promise<T> {
+  return await page.evaluate(async (msg) => {
+    const reg = await navigator.serviceWorker.ready;
+    return await new Promise((resolve) => {
+      const ch = new MessageChannel();
+      ch.port1.onmessage = (ev) => resolve(ev.data);
+      reg.active?.postMessage(msg, [ch.port2]);
+    });
+  }, payload);
+}
 
 // --- Test-Schritt Definitionen ---
 
 async function runCycle1(page: Page) {
-  note('STEP:Z1_START');
+  note(`STEP:Z1_START BASE_URL: ${BASE_URL}`);
   await page.goto(BASE_URL);
   await page.locator('[data-testid="product-card-1"]').click();
   await page.waitForLoadState('networkidle');
@@ -91,7 +103,7 @@ async function runCycle7(page: Page) {
 
 // --- Haupt-Test: Führt alle Zyklen sequenziell aus ---
 
-test('Finales 7-Zyklen Testszenario', async ({ page }) => {
+test('7-Zyklen Testszenario', async ({ page }) => {
   startNotesClock();
   note('RUN_START');
 
@@ -102,6 +114,9 @@ test('Finales 7-Zyklen Testszenario', async ({ page }) => {
 
   // --- Passive Phase 1 ---
   note('PHASE:PASSIVE_1_START');
+  if (APP_MODE === 'CO2_AWARE') {
+    await swCall(page, { type: 'TRIGGER_WARMUP', delayMs: 5000 });
+  }
   await page.waitForTimeout(timeoutPhase);
   note('PHASE:PASSIVE_1_END');
 
@@ -147,6 +162,10 @@ test('Finales 7-Zyklen Testszenario', async ({ page }) => {
 
   // --- ZYKLUS 7 ---
   await runCycle7(page);
-
+  if (APP_MODE === 'CO2_AWARE') {
+    const stats = await swCall<{ hits:number; misses:number; requests:number }>(page, { type: 'GET_COUNTERS' });
+    note(`SW_COUNTERS hits=${stats?.hits ?? 0} misses=${stats?.misses ?? 0} requests=${stats?.requests ?? 0}`);
+  }
+  await page.request.post('/api/metrics/flush');
   note('RUN_END');
 });

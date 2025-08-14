@@ -1,4 +1,4 @@
-// notes.ts — AUSZUG
+// notes.ts
 let baseEpochUs: bigint;
 let hrStartNs: bigint;
 

@@ -8,7 +8,8 @@ import { fetchProducts } from '../services/apiServices';
 import { useSearchParams } from 'react-router-dom';
 
 function HomePage() {
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  // const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  const API_BASE_URL = ''; // gleich-origin
   
   const [searchParams, setSearchParams] = useSearchParams();
 

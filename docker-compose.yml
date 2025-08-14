@@ -2,7 +2,7 @@
 
 services:
   # 1. Der Datenbank-Service
-  db:
+  co2-aware-db:
     image: postgres:14-alpine
     container_name: co2-aware-db
     restart: always
@@ -25,7 +25,7 @@ services:
       retries: 5      # Versuche es 5 Mal, bevor der Status auf "unhealthy" gesetzt wird
 
   # 2. Der Backend-Service
-  backend:
+  co2-aware-backend:
     container_name: co2-aware-backend
     build:
       context: ./backend
@@ -33,7 +33,7 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      db:
+      co2-aware-db:
         condition: service_healthy
     environment:
       DB_HOST: co2-aware-db
@@ -41,7 +41,7 @@ services:
       DB_PASSWORD: password
       DB_NAME: co2_aware_db
       DB_PORT: 5432
-      APP_MODE: CLASSIC
+      APP_MODE: CO2_AWARE
     networks:
       - app-network
     command: >
@@ -51,14 +51,17 @@ services:
       "
 
   # 3. Der Frontend-Service
-  frontend:
+  co2-aware-frontend:
     container_name: co2-aware-frontend
     build:
       context: ./co2-aware-frontend
+    volumes:
+      - ./co2-aware-frontend/certs:/etc/nginx/certs:ro
     ports:
       - "8080:80"
+      - "8443:443"
     depends_on:
-      - backend
+      - co2-aware-backend
     networks:
       - app-network
     command: sh -c "echo '🚀 Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
@@ -71,11 +74,12 @@ services:
     networks:
       - app-network
     depends_on:
-      - db
-      - backend
-      - frontend
+      - co2-aware-db
+      - co2-aware-backend
+      - co2-aware-frontend
     environment:
-      - BASE_URL=http://co2-aware-frontend:80
+      - BASE_URL=http://co2-aware-frontend
+      - APP_MODE=CO2_AWARE
 
 
 # Definition des Netzwerks

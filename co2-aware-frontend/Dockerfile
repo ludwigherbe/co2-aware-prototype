@@ -3,14 +3,15 @@ FROM node:20-alpine AS build
 WORKDIR /usr/src/app
 
 # Mache das Build-Argument im Dockerfile bekannt
-ARG VITE_API_BASE_URL
+# ARG VITE_API_BASE_URL
 ARG VITE_APP_MODE
 # Setze es als Umgebungsvariable, damit npm/vite darauf zugreifen kann
-ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
-ENV VITE_APP_MODE=CLASSIC
+# ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
+# ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
+ENV VITE_APP_MODE=CO2_AWARE
 
-COPY package*.json ./
-RUN npm ci
+COPY package.json ./
+RUN npm install --no-audit --no-fund
 
 # Restlichen Quellcode kopieren
 COPY . .

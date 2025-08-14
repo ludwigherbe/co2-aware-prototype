@@ -24,7 +24,6 @@
     { "url": "/api/products/41", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
     { "url": "/api/products/41/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
     { "url": "/api/products/42", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
-    { "url": "/api/products/42/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
-    { "url": "/api/cart", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null }
+    { "url": "/api/products/42/related", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null }
   ]
 }

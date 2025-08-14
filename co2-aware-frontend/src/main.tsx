@@ -29,3 +29,18 @@ createRoot(document.getElementById('root')!).render(
     </ThemeProvider>
   </StrictMode>,
 );
+
+console.log('Frontend started in mode:', import.meta.env.VITE_APP_MODE);
+
+if (import.meta.env.VITE_APP_MODE === 'CO2_AWARE' && 'serviceWorker' in navigator) {
+  const swUrl = '/sw.js';
+  // const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+  const API_BASE_URL = ''; // gleich-origin
+
+  navigator.serviceWorker.register(swUrl, { scope: '/' })
+    .then(() => {
+      console.log('Service worker registered successfully');
+    })
+    .catch((e) => console.log('Service worker registration failed', e));
+}
+

@@ -1,6 +1,7 @@
 {
   "userId": "1",
   "forecast": [
+    { "url": "/images/template_detail_1.png", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
     { "url": "/images/template_thumbnail.png?product=1", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
     { "url": "/images/template_thumbnail.png?product=2", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },
     { "url": "/images/template_thumbnail.png?product=3", "probability": 0.8, "isCacheable": true, "ttlSeconds": 604800, "predictedFirstCall": null },

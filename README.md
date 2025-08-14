@@ -80,6 +80,7 @@ Die Anwendung ist nun betriebsbereit. Das Frontend ist typischerweise unter `htt
 ## Messung - Green Metrics Tool
 - Modus: CLASSIC oder CO2_AWARE an folgenden Stellen korrekt setzen:
 docker-compose.yml - backend - enviroment - APP_MODE
+docker-compose.yml - testrunner - environment - APP_MODE
 frontend/Dockerfile - ENV VITE_APP_MODE
 
 - in der Testdatei scenario.spec.ts die gewünschte Zeit zwischen den Zyklen eingestellt

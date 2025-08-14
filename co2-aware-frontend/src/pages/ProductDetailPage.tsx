@@ -23,7 +23,8 @@ import ProductCard from '../components/ProductCard';
 
 
 function ProductDetailPage() {
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  // const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+  const API_BASE_URL = ''; // gleich-origin
 
 
   const { id } = useParams<{ id: string }>();
