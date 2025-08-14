@@ -55,8 +55,6 @@ services:
     container_name: co2-aware-frontend
     build:
       context: ./co2-aware-frontend
-    volumes:
-      - ./co2-aware-frontend/certs:/etc/nginx/certs:ro
     ports:
       - "8080:80"
       - "8443:443"
