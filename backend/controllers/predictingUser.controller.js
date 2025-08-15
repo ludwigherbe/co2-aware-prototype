@@ -48,6 +48,8 @@ const getPredictedUserCalls = async (req, res) => {
  * - Antwort: string[] (nur URLs)
  */
 const getCachePlan = async (req, res) => {
+  const tsUs = BigInt(Date.now()) * 1000n;
+  process.stdout.write(`${tsUs} BACKEND:CACHEPLAN\n`);
   if (process.env.APP_MODE !== 'CO2_AWARE') {
     return res.status(404).json({ message: 'Cache-Plan ist im CLASSIC-Modus nicht verfügbar.' });
   }

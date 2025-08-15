@@ -21,7 +21,7 @@ services:
   co2-aware-frontend:
     ports: []
     log-stdout: true
-  testrunner:
+  co2-aware-testrunner:
     entrypoint: ""
     volumes: []
     command: "sh -c 'sleep infinity'"

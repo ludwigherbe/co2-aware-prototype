@@ -41,7 +41,7 @@ services:
       DB_PASSWORD: password
       DB_NAME: co2_aware_db
       DB_PORT: 5432
-      APP_MODE: CLASSIC
+      APP_MODE: CO2_AWARE
     networks:
       - app-network
     command: >
@@ -64,7 +64,7 @@ services:
       - app-network
     command: sh -c "echo '🚀 Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
   
-  testrunner:
+  co2-aware-testrunner:
     container_name: co2-aware-testrunner
     build: ./testrunner
     volumes:
@@ -77,7 +77,7 @@ services:
       - co2-aware-frontend
     environment:
       - BASE_URL=http://co2-aware-frontend
-      - APP_MODE=CLASSIC
+      - APP_MODE=CO2_AWARE
 
 
 # Definition des Netzwerks
