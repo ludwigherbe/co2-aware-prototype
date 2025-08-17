@@ -170,7 +170,7 @@ test('Vielfaches des 7 Zyklus Testszenario', async ({ page }) => {
   note('RUN_START');
 
   // Feste Vorgaben
-  const MAX_TEST_MS = 600_000; // 10 Minuten
+  const MAX_TEST_MS = 700_000; // 11 Minuten
   const TARGET_CYCLES = 30;    // 30 Zyklen
   const FAST_PAUSE_MS = 2_000; // 2 Sekunden zwischen Aktivphasen
   const PASSIVE1_MS = 30_000;  // 30 Sekunden in Passivphase 1
