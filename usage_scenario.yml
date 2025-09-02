@@ -36,5 +36,6 @@ flow:
       - type: console
         command: "npx playwright test"
         read-notes-stdout: true
+        log-stdout: true
       - type: console
         command: "sleep 20"
