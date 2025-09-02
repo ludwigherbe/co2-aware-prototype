@@ -1,0 +1,311 @@
+{
+  "success": true,
+  "data": [
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "RUN_END",
+      1756828157987797
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "SW_COUNTERS hits=209 misses=120 requests=329",
+      1756828157759977
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z7_START",
+      1756828157271959
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_6_END",
+      1756828157271814
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_6_START",
+      1756828127269416
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z6_START",
+      1756828126972205
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_5_END",
+      1756828126972089
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_5_START",
+      1756828096970880
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z5_START",
+      1756828096355986
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_4_END",
+      1756828096355832
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_4_START",
+      1756828066355252
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z4_START",
+      1756828065812261
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_3_END",
+      1756828065812068
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_3_START",
+      1756828035807974
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z3_START",
+      1756828033978006
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_2_END",
+      1756828033977785
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_2_START",
+      1756828003976466
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z2_START",
+      1756828003593735
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_1_END",
+      1756828003593612
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "PHASE:PASSIVE_1_START",
+      1756827973579922
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "STEP:Z1_START BASE_URL: http://co2-aware-frontend",
+      1756827971530551
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-testrunner",
+      "RUN_START",
+      1756827971530032
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-backend",
+      "BACKEND:METRICS total=157 2xx=144 3xx=13 4xx=0 5xx=0 200=144 304=13 conditional=13 products_list=8 products_id=14 products_related=14 cart=3 predicting_user=1 images=117 other=0 swWarmup=95 normal=62",
+      1756828157781000
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "co2-aware-backend",
+      "BACKEND:CACHEPLAN",
+      1756827978589000
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "End of measurement",
+      1756828180791908
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [REMOVE] [PADDED]",
+      1756828180791769
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [REMOVE] [UNPADDED]",
+      1756828180692769
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [REMOVE]",
+      1756828179692598
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [RUNTIME] [PADDED]",
+      1756828178692271
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [RUNTIME] [UNPADDED]",
+      1756828178593271
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase Playwright run [PADDED]",
+      1756828178593070
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase Playwright run [UNPADDED]",
+      1756828178494070
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase Playwright run",
+      1756827967975755
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [RUNTIME]",
+      1756827967975668
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [IDLE] [PADDED]",
+      1756827966975320
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [IDLE] [UNPADDED]",
+      1756827966876320
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [IDLE]",
+      1756827906876077
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [BOOT] [PADDED]",
+      1756827903801086
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [BOOT] [UNPADDED]",
+      1756827903702086
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [BOOT]",
+      1756827884797713
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [INSTALLATION] [PADDED]",
+      1756827883603444
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [INSTALLATION] [UNPADDED]",
+      1756827883504444
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Building co2-aware-testrunner_4367667",
+      1756827669143623
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Building co2-aware-frontend_5966330",
+      1756827561025993
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Building co2-aware-backend_918012",
+      1756827537460601
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Pulling {service['image']}",
+      1756827536245541
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [INSTALLATION]",
+      1756827536222351
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [BASELINE] [PADDED]",
+      1756827535222001
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Ending phase [BASELINE] [UNPADDED]",
+      1756827535123001
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Starting phase [BASELINE]",
+      1756827475122783
+    ],
+    [
+      "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
+      "[NOTES]",
+      "Start of measurement",
+      1756827452942589
+    ]
+  ]
+}
