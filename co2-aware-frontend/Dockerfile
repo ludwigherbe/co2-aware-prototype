@@ -8,7 +8,7 @@ ARG VITE_APP_MODE
 # Setze es als Umgebungsvariable, damit npm/vite darauf zugreifen kann
 # ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
 # ENV VITE_API_BASE_URL=http://co2-aware-backend:5000
-ENV VITE_APP_MODE=CO2_AWARE
+ENV VITE_APP_MODE=CLASSIC
 
 COPY package.json ./
 RUN npm install --no-audit --no-fund

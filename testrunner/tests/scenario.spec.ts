@@ -171,7 +171,7 @@ test('Vielfaches des 7 Zyklus Testszenario', async ({ page }) => {
 
   // Feste Vorgaben
   const MAX_TEST_MS = 700_000; // 11 Minuten
-  const TARGET_CYCLES = 30;    // 30 Zyklen
+  const TARGET_CYCLES = 10;    // 10 Zyklen
   const FAST_PAUSE_MS = 2_000; // 2 Sekunden zwischen Aktivphasen
   const PASSIVE1_MS = 30_000;  // 30 Sekunden in Passivphase 1
 
@@ -189,9 +189,9 @@ test('Vielfaches des 7 Zyklus Testszenario', async ({ page }) => {
   if (APP_MODE === 'CO2_AWARE') {
     note('PHASE:PASSIVE_1_START');
     await swCall(page, { type: 'TRIGGER_WARMUP', delayMs: 5000 });
-    note('PHASE:PASSIVE_1_END');
   }
   await page.waitForTimeout(PASSIVE1_MS);
+  note('PHASE:PASSIVE_1_END');
 
   for (let i = 1; i < runs.length; i++) {
     await runs[i](page);

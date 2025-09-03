@@ -75,7 +75,8 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
         notes_url = f"https://api.green-coding.io/v1/notes/{messung_id}"
         notes_api_data = get_api_data(notes_url, notes_path)
 
-        ts = {"runtime_start": None, "runtime_end": None, "passive_1_start": None, "passive_1_end": None}
+        ts = {"runtime_start": None, "runtime_end": None, "passive_1_start": None, "STEP:Z2_START": None}
+        # anstatt passive_1_end muss STEP:Z2_START beginn genommen werden
         if notes_api_data.get("success"):
             for note in notes_api_data["data"]:
                 message, timestamp = note[2], note[3]
