@@ -13,16 +13,23 @@ CONFIG = {
     "1cycle-co2aware-3of10": "b148dbe2-f1f1-44dc-9954-3330ec4744e5",
     "1cycle-co2aware-4of10": "947b2a19-094f-4b0b-84f6-d3511e51ce40",
     "1cycle-co2aware-5of10": "79b0756b-b28a-4576-b2b7-7aba7feb63a5",
-    "1cycle_classic": "d0ece413-bfc9-47b0-aef2-9b6f841b5379"
+    "1cycle_classic": "d0ece413-bfc9-47b0-aef2-9b6f841b5379",
+    "10cycle-co2aware": "7f6ecb28-4df0-4d37-8b5e-2d3949fa2661",
+    "20cycle-co2aware": "1e8c6d11-29e2-4341-ae9a-2d8b5a153e4d",
+    "30cycle-co2aware": "e95a58dd-c4f6-4920-9918-7bd0513f06de"
 }
 
-# NEU: Liste der Messungen, die in diesem Durchlauf verarbeitet werden sollen
+# Liste der Messungen, die in diesem Durchlauf verarbeitet werden sollen
 MEASUREMENTS_TO_PROCESS = [
+    # Hier können je nach Bedarf Messungen ein- oder auskommentiert werden
     "1cycle_co2aware_1of10",
     "1cycle-co2aware-2of10",
     "1cycle-co2aware-3of10",
     "1cycle-co2aware-4of10",
-    "1cycle-co2aware-5of10"
+    "1cycle-co2aware-5of10",
+    # "10cycle-co2aware",
+    # "20cycle-co2aware",
+    # "30cycle-co2aware"
 ]
 
 API_KEY = "DEFAULT"
@@ -61,9 +68,11 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
     try:
         messung_id = CONFIG[mode_name]
         is_co2_aware_mode = "co2aware" in mode_name.lower()
+        # NEU: Unterscheidung zwischen Single- und Multi-Cycle-Läufen
+        is_multicycle = "cycle-" in mode_name and not mode_name.startswith("1cycle")
 
         print("\n" + "="*60)
-        print(f"VERARBEITE: '{mode_name}' ({messung_id})")
+        print(f"VERARBEITE: '{mode_name}' ({messung_id}) - Multicycle: {is_multicycle}")
         print("="*60)
 
         # Verzeichnisse für Rohdaten anlegen
@@ -75,8 +84,15 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
         notes_url = f"https://api.green-coding.io/v1/notes/{messung_id}"
         notes_api_data = get_api_data(notes_url, notes_path)
 
-        ts = {"runtime_start": None, "runtime_end": None, "passive_1_start": None, "STEP:Z2_START": None}
-        # anstatt passive_1_end muss STEP:Z2_START beginn genommen werden
+        # GEÄNDERT: 'ts' Dictionary um 'step_z2_start' erweitert
+        ts = {
+            "runtime_start": None,
+            "runtime_end": None,
+            "passive_1_start": None,
+            "passive_1_end": None, # Behalten für alte Messungen
+            "step_z2_start": None  # NEU für die Multi-Cycle-Messungen
+        }
+
         if notes_api_data.get("success"):
             for note in notes_api_data["data"]:
                 message, timestamp = note[2], note[3]
@@ -84,21 +100,42 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
                 elif message == "Ending phase [RUNTIME] [UNPADDED]": ts["runtime_end"] = timestamp
                 elif message == "PHASE:PASSIVE_1_START": ts["passive_1_start"] = timestamp
                 elif message == "PHASE:PASSIVE_1_END": ts["passive_1_end"] = timestamp
+                # NEU: Erfasse den ersten Z2_START-Zeitstempel
+                elif message == "STEP:Z2_START" and ts["step_z2_start"] is None:
+                    ts["step_z2_start"] = timestamp
 
         if not all([ts["runtime_start"], ts["runtime_end"]]):
             raise ValueError("Konnte RUNTIME Start/Ende nicht in den 'notes' finden.")
 
-        # 2. Precaching-Fenster berechnen
+        # 2. Precaching-Fenster berechnen (GEÄNDERTE LOGIK)
         precache_ts = {"start": None, "end": None, "duration_s": 0}
         if is_co2_aware_mode:
-            if not all([ts["passive_1_start"], ts["passive_1_end"]]):
-                raise ValueError("Konnte PASSIVE_1 Start/Ende nicht finden.")
+            # Stelle sicher, dass der Startpunkt immer da ist
+            if not ts["passive_1_start"]:
+                raise ValueError("Konnte PHASE:PASSIVE_1_START nicht finden.")
+
+            # Wähle die obere Grenze für den Sicherheitscheck basierend auf dem Messungstyp
+            upper_bound_ts = None
+            error_message_noun = ""
+            if is_multicycle:
+                upper_bound_ts = ts["step_z2_start"]
+                error_message_noun = "STEP:Z2_START"
+            else: # Für alte 1-cycle-Messungen
+                upper_bound_ts = ts["passive_1_end"]
+                error_message_noun = "PHASE:PASSIVE_1_END"
+            
+            if not upper_bound_ts:
+                raise ValueError(f"Konnte die obere Zeitgrenze ({error_message_noun}) nicht finden.")
+
+            # Die Berechnung des Fensters selbst bleibt gleich
             us_per_second = 1_000_000
             precache_ts["start"] = ts["passive_1_start"] + PRECACHE_OFFSET_S * us_per_second
             precache_ts["end"] = precache_ts["start"] + PRECACHE_DURATION_S * us_per_second
             precache_ts["duration_s"] = (precache_ts["end"] - precache_ts["start"]) / us_per_second
-            if precache_ts["end"] >= ts["passive_1_end"]:
-                 print("WARNUNG: Precaching-Ende liegt nach dem Ende von PHASE_PASSIVE_1!")
+
+            # Der Sicherheitscheck verwendet nun die dynamische obere Grenze
+            if precache_ts["end"] >= upper_bound_ts:
+                 print(f"WARNUNG: Precaching-Ende ({precache_ts['end']}) liegt nach dem Ende der passiven Phase, markiert durch {error_message_noun} ({upper_bound_ts})!")
 
         # 3. 'measurements'-Daten abrufen (mit Caching)
         measurements_path = os.path.join(run_dir, "measurements.json")
@@ -115,7 +152,7 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
                 record_timestamp = record[1]
                 if ts["runtime_start"] <= record_timestamp <= ts["runtime_end"]:
                     bucket = 'other_runtime'
-                    if is_co2_aware_mode and precache_ts["start"] <= record_timestamp <= precache_ts["end"]:
+                    if is_co2_aware_mode and precache_ts["start"] and precache_ts["end"] and (precache_ts["start"] <= record_timestamp <= precache_ts["end"]):
                         bucket = 'precache'
                     
                     metric_name, value = record[2], record[3]
@@ -144,7 +181,6 @@ for mode_name in MEASUREMENTS_TO_PROCESS:
 
     except Exception as e:
         print(f"FEHLER bei der Verarbeitung von '{mode_name}': {e}")
-        # Optional: Hier könnten Fehler auch in die CSV geschrieben werden
 
 # --- Nach der Schleife: Alle Ergebnisse in eine CSV-Datei schreiben ---
 csv_file_path = os.path.join(BASE_RESULTS_DIR, "master_results.csv")

@@ -1,0 +1,2 @@
+measurement_name,measurement_id,runtime_duration_s,precache_duration_s,precache_energy_mwh,precache_network_mb,other_runtime_energy_mwh,other_runtime_network_mb,total_energy_mwh,total_network_mb
+1cycle-co2aware-5of10,79b0756b-b28a-4576-b2b7-7aba7feb63a5,210.617603,10.0,54.75154611111111,200.28868865966797,1055.4761327777778,92.5680103302002,1110.227678888889,292.85669898986816
