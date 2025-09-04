@@ -7,7 +7,6 @@ import time
 # --- Konfiguration ---
 # Definiere alle deine Messungen
 CONFIG = {
-    "1cycle_classic_1of5": "bc857a07-0ced-4c37-a0e8-5d1c1f383736",
     "1cycle_co2aware_1of10": "8abf2683-597e-4709-9c23-bb717317c733",
     "1cycle-co2aware-2of10": "e80e74e8-7ba0-4e34-ab97-34beff689b58",
     "1cycle-co2aware-3of10": "b148dbe2-f1f1-44dc-9954-3330ec4744e5",
@@ -16,20 +15,25 @@ CONFIG = {
     "1cycle_classic": "d0ece413-bfc9-47b0-aef2-9b6f841b5379",
     "10cycle-co2aware": "7f6ecb28-4df0-4d37-8b5e-2d3949fa2661",
     "20cycle-co2aware": "1e8c6d11-29e2-4341-ae9a-2d8b5a153e4d",
-    "30cycle-co2aware": "e95a58dd-c4f6-4920-9918-7bd0513f06de"
+    "30cycle-co2aware": "e95a58dd-c4f6-4920-9918-7bd0513f06de",
+    "1cycle-classic_increasedsize": "7194f7d4-f85c-49af-83b1-065dc97a1b8e",
+    "1cycle-co2aware_increasedsize": "7194f7d4-f85c-49af-83b1-065dc97a1b8e",
+    "1cycle-classic-2of5": "e53910f1-14be-4c69-8764-0448b2f8d723"
 }
 
 # Liste der Messungen, die in diesem Durchlauf verarbeitet werden sollen
 MEASUREMENTS_TO_PROCESS = [
     # Hier können je nach Bedarf Messungen ein- oder auskommentiert werden
-    "1cycle_co2aware_1of10",
-    "1cycle-co2aware-2of10",
-    "1cycle-co2aware-3of10",
-    "1cycle-co2aware-4of10",
-    "1cycle-co2aware-5of10",
+    # "1cycle_co2aware_1of10",
+    # "1cycle-co2aware-2of10",
+    # "1cycle-co2aware-3of10",
+    # "1cycle-co2aware-4of10",
+    # "1cycle-co2aware-5of10",
     # "10cycle-co2aware",
     # "20cycle-co2aware",
-    # "30cycle-co2aware"
+    # "30cycle-co2aware",
+    # "1cycle-co2aware_increasedsize",
+    "1cycle-classic-2of5"
 ]
 
 API_KEY = "DEFAULT"

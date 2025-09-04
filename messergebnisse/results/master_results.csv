@@ -1,0 +1,2 @@
+measurement_name,measurement_id,runtime_duration_s,precache_duration_s,precache_energy_mwh,precache_network_mb,other_runtime_energy_mwh,other_runtime_network_mb,total_energy_mwh,total_network_mb
+1cycle-classic-2of5,e53910f1-14be-4c69-8764-0448b2f8d723,210.44056,0,0.0,0.0,1109.8434866666666,175.8043508529663,1109.8434866666666,175.8043508529663
