@@ -136,7 +136,6 @@ app.post('/api/notes', (req, res) => {
 // API-&Image-Routen registrieren
 // ======================================================
 app.use('/api/products', productRoutes);
-app.use('/api/predicting-user', predictingUserRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/images', imageRoutes);
 if (process.env.APP_MODE === 'CO2_AWARE') {

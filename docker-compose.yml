@@ -62,7 +62,7 @@ services:
       - co2-aware-backend
     networks:
       - app-network
-    command: sh -c "echo '🚀 Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
+    command: sh -c "echo 'Frontend ist bereit unter http://localhost:8080' && nginx -g 'daemon off;'"
   
   co2-aware-testrunner:
     container_name: co2-aware-testrunner
