@@ -29,7 +29,7 @@ const getAllProducts = async (req, res) => {
       queryParams.push(`%${search}%`);
     }
 
-    // HINWEIS: Um später nach Kategorie zu filtern, füge einfach hinzu:
+    // HINWEIS: Um später nach Kategorie zu filtern
     // if (req.query.category) {
     //   whereClauses.push(`category = $${paramIndex++}`);
     //   queryParams.push(req.query.category);

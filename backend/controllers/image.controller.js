@@ -1,4 +1,4 @@
-// backend/controllers/image.controller.js
+
 
 const path = require('path');
 const fs = require('fs');

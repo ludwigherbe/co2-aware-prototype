@@ -1,5 +1,3 @@
-// backend/routes/predictingUser.routes.js
-
 const express = require('express');
 const router = express.Router();
 // Die importierte Funktion wurde an den Controller angepasst.

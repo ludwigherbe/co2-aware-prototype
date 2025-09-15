@@ -34,7 +34,7 @@ function ProductDetailPage() {
   const [error, setError] = useState<string | null>(null);
   const [isAdding, setIsAdding] = useState(false);
 
-  // NEU: States für die Snackbar
+  // States für die Snackbar
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
   const [snackbarSeverity, setSnackbarSeverity] = useState<'success' | 'error'>('success');
@@ -63,7 +63,7 @@ function ProductDetailPage() {
     loadProductData();
   }, [id]);
 
-  // NEU: Angepasste Funktion ohne alert(), stattdessen mit Snackbar
+  // Angepasste Funktion ohne alert(), stattdessen mit Snackbar
   const handleAddToCart = async () => {
     if (!product) return;
     setIsAdding(true);
@@ -168,7 +168,7 @@ function ProductDetailPage() {
         </Grid>
       </Box>
 
-      {/* NEU: Snackbar-Komponente für das Feedback */}
+      {/* Snackbar-Komponente für das Feedback */}
       <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
         <Alert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={{ width: '100%' }}>
           {snackbarMessage}

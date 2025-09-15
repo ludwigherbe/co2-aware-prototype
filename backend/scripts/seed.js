@@ -1,8 +1,6 @@
-// backend/scripts/seed.js
-
 const fs = require('fs').promises;
 const path = require('path');
-const pool = require('../config/db'); // Importiert unseren DB-Verbindungspool
+const pool = require('../config/db');
 
 async function seedDatabase() {
   const client = await pool.connect();
@@ -14,7 +12,7 @@ async function seedDatabase() {
     const productsData = await fs.readFile(productsPath, 'utf8');
     const products = JSON.parse(productsData);
 
-    // 2. Lösche die alte Tabelle, falls sie existiert (für einen sauberen Reset)
+    // 2. Lösche die alte Tabelle, falls sie existiert
     await client.query('DROP TABLE IF EXISTS products');
     console.log('Alte "products"-Tabelle gelöscht.');
 
@@ -35,7 +33,6 @@ async function seedDatabase() {
     console.log('"products"-Tabelle erfolgreich erstellt.');
 
     // 4. Füge die Produkte aus der JSON-Datei in die Tabelle ein
-    // HINWEIS: Wir verwenden jetzt die korrekten englischen Feldnamen aus der JSON
     for (const product of products) {
       await client.query(
         `INSERT INTO products (id, name, price, description, category, thumbnail, detail_images, in_stock)
@@ -58,7 +55,6 @@ async function seedDatabase() {
   } catch (error) {
     console.error('Fehler während des Seeding-Prozesses:', error);
   } finally {
-    // Gib die Verbindung auf jeden Fall wieder frei
     client.release();
   }
 }

@@ -1,4 +1,3 @@
-// backend/controllers/cart.controller.js
 
 // --- In-Memory-Warenkorb für den Prototyp ---
 let cart = {

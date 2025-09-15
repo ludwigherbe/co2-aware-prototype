@@ -1,4 +1,3 @@
-// backend/controllers/predictingUser.controller.js
 
 const fs = require('fs').promises;
 const path = require('path');
@@ -40,7 +39,7 @@ const getPredictedUserCalls = async (req, res) => {
 };
 
 /**
- * Neuer Endpoint: Cache-Plan als reine URL-Liste.
+ * Endpoint: Cache-Plan als reine URL-Liste.
  * - nur im CO2_AWARE-Modus (sonst 404)
  * - liest API- und Image-Vorhersagen
  * - filtert: isCacheable === true && probability >= PREDICT_THRESHOLD

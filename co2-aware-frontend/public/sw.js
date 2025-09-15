@@ -4,13 +4,16 @@ let warmupDone = false;
 const counters = { hits: 0, misses: 0, requests: 0 };
 let pending = { hits: 0, misses: 0, requests: 0 };
 
+// Hilfsfunktion: aktuelle Zeit in Mikrosekunden
 const nowUs = () => Math.round((performance.timeOrigin + performance.now()) * 1000);
 
+// Erzeuge Cache-Key aus URL
 const keyFrom = (u) => {
   const { pathname, search } = new URL(u, self.location.origin);
   return pathname + (search || '');
 };
 
+// Sende eine Notiz an das Backend
 const sendNote = (msg) => {
   const ts = nowUs();
   fetch('/api/notes', {
@@ -22,12 +25,13 @@ const sendNote = (msg) => {
   }).catch(() => {});
 };
 
+// Service Worker Installations- und Aktivierungs-Events
 self.addEventListener('install', (e) => e.waitUntil(self.skipWaiting()));
 self.addEventListener('activate', (e) =>
   e.waitUntil(self.clients.claim())
 );
 
-// Schedule via Message
+// Nachrichten-Handler für Steuerbefehle
 self.addEventListener('message', (e) => {
   const d = e.data || {};
   const reply = (x) => e.ports?.[0]?.postMessage(x);
@@ -43,6 +47,7 @@ self.addEventListener('message', (e) => {
   }
 });
 
+// Cache-Warmup: lade vorhergesagte Ressourcen vorab
 async function doWarmup() {
   if (warmupDone) return;
   const res = await fetch('/api/predicting-user/cache-plan', { cache: 'no-store' });
@@ -59,6 +64,7 @@ async function doWarmup() {
   warmupDone = true;
 }
 
+// Fetch-Handler: bediene Anfragen aus Cache oder Netzwerk
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;

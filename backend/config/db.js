@@ -1,14 +1,9 @@
-// backend/config/db.js
-
 // Importiere den Pool-Client aus dem pg-Paket.
-// Ein "Pool" ist eine Sammlung von wiederverwendbaren Datenbankverbindungen.
-// Das ist effizienter als für jede Anfrage eine neue Verbindung zu öffnen.
 const { Pool } = require('pg');
 
 // Erstelle eine neue Pool-Instanz mit festen Verbindungsdaten.
 // HINWEIS: Dieser Ansatz wird verwendet, da im Zielsystem (Green Metrics Tool)
 // keine Umgebungsvariablen für die DB-Verbindung gesetzt werden können.
-// Für die lokale Entwicklung ist die Verwendung von process.env flexibler.
 const pool = new Pool({
   host: 'co2-aware-db',   // Der Service-Name des DB-Containers in Docker
   user: 'user',           // Der in docker-compose.yml definierte Benutzer

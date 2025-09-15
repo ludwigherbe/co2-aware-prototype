@@ -1,7 +1,5 @@
-// co2-aware-frontend/src/services/apiServices.ts
 import type { Cart, Product } from '../types';
 
-// Wir definieren die gesamte API-Antwort als Typ für Typsicherheit
 export interface PaginatedProductsResponse {
   results: Product[];
   info: {
