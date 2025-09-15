@@ -16,9 +16,13 @@ CONFIG = {
     "10cycle-co2aware": "7f6ecb28-4df0-4d37-8b5e-2d3949fa2661",
     "20cycle-co2aware": "1e8c6d11-29e2-4341-ae9a-2d8b5a153e4d",
     "30cycle-co2aware": "e95a58dd-c4f6-4920-9918-7bd0513f06de",
-    "1cycle-classic_increasedsize": "7194f7d4-f85c-49af-83b1-065dc97a1b8e",
-    "1cycle-co2aware_increasedsize": "7194f7d4-f85c-49af-83b1-065dc97a1b8e",
-    "1cycle-classic-2of5": "e53910f1-14be-4c69-8764-0448b2f8d723"
+    "1cycle-classic-2of5": "e53910f1-14be-4c69-8764-0448b2f8d723",
+    "10cycle-classic": "88e71e77-ce12-4e56-983a-794d9ef5d406",
+    "20cycle-classic": "dac43642-5eae-4ca5-acd8-3dc00aa3fafd",
+    "30cycle-classic": "5a2579d7-b8cf-43bf-8483-9cf30beee3fe",
+    "30cycle-co2aware": "e95a58dd-c4f6-4920-9918-7bd0513f06de",
+    "1cycle-classic-big": "b1fc3d0f-973c-4507-8b71-a28e9dbdeaf6",
+    "1cycle-co2aware-big": "7194f7d4-f85c-49af-83b1-065dc97a1b8e"
 }
 
 # Liste der Messungen, die in diesem Durchlauf verarbeitet werden sollen
@@ -33,7 +37,13 @@ MEASUREMENTS_TO_PROCESS = [
     # "20cycle-co2aware",
     # "30cycle-co2aware",
     # "1cycle-co2aware_increasedsize",
-    "1cycle-classic-2of5"
+    # "1cycle-classic-2of5",
+    # "10cycle-classic",
+    # "20cycle-classic",
+    # "30cycle-classic",
+    # "30cycle-co2aware",
+    # "1cycle_classic-big",
+    "1cycle-co2aware-big"
 ]
 
 API_KEY = "DEFAULT"

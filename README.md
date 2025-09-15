@@ -85,6 +85,15 @@ frontend/Dockerfile - ENV VITE_APP_MODE
 
 - in der Testdatei scenario.spec.ts die gewünschte Zeit zwischen den Zyklen eingestellt
 
+## Messergebnisse und Auswertungsskripte
+
+Die Rohdaten liegen im Verzeichnis `messergebnisse/results` und können mit den dortigen Python-Skripten ausgewertet werden.
+Am übersichtlichsten sind sie allerdings auf der Website des Green Metrics Tools dargestellt: https://metrics.green-coding.io/stats.html?id=7194f7d4-f85c-49af-83b1-065dc97a1b8e (ID anpassen je nach Messung)
+
+Um die Daten zu explorieren empfiehlt es sich die Excel Datei `messergebnisse/Auswertung Messergebnisse Prototyp Green Metrics Tool.xlsx` zu verwenden.
+Hier können die Daten angesehen werden, die Berechnung nachverfolgt werden und die Umrechnungsfaktoren, sowie die CO2-Emissionsfaktoren angepasst werden.
+
+
 ## Lizenz
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert.
